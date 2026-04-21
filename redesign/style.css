@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap');
+
+/* ── Design system tokens ──────────────────────────────────────────── */
+:root {
+  --color-ink:              #0F1115;
+  --color-signal:           #1A47B8;
+  --color-signal-light:     #6E9AFF;
+  --color-paper:            #EAEDF5;
+  --color-canvas:           #F5F7FA;
+  --color-line:             #D4D9E4;
+  --color-text-primary:     #0F1115;
+  --color-text-secondary:   #4A4A47;
+  --color-text-tertiary:    #8A8A86;
+
+  --font-sans:   'DM Sans', -apple-system, sans-serif;
+  --font-serif:  'Source Serif 4', Georgia, serif;
+
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   14px;
+  --radius-xl:   20px;
+
+  --motion-fast: 150ms ease;
+  --motion-base: 240ms cubic-bezier(0.2, 0, 0, 1);
+  --motion-slow: 400ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-ink:            #F0EFE8;
+    --color-canvas:         #0A0B0E;
+    --color-paper:          #14161B;
+    --color-line:           #2A2C32;
+    --color-text-primary:   #F0EFE8;
+    --color-text-secondary: #B5B4AD;
+    --color-text-tertiary:  #6B6864;
+    --color-signal:         #6E9AFF;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-canvas);
+  color: var(--color-text-primary);
+  line-height: 1.7;
+}
+
+#root { min-height: 100vh; }
+p:last-child { margin-bottom: 0; }
+strong { font-weight: 500; color: var(--color-text-primary); }
+a { color: var(--color-signal); }

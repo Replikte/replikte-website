@@ -3,290 +3,241 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Replikte — Home Services & Trades</title>
+<meta name="description" content="Replikte for HVAC, plumbing, electrical &amp; trades — estimates, maintenance, reviews, and scheduling on autopilot.">
+<title>replikte — Home Services &amp; Trades</title>
+<link rel="icon" href="logos/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="page-wrapper">
-
-  <nav class="nav">
-    <a href="index.html" class="nav-logo">
-      <svg width="28" height="18" viewBox="0 0 28 18"><path d="M 2 4 L 2 14 L 10 9 Z" fill="var(--signal)"/><path d="M 26 4 L 26 14 L 18 9 Z" fill="var(--signal)"/></svg>
+<div class="site-wrap">
+  <nav class="nav" aria-label="Primary">
+    <a href="index.html" class="nav__logo">
+      <svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><path d="M 2 4 L 2 14 L 10 9 Z" fill="var(--color-signal)"/><path d="M 26 4 L 26 14 L 18 9 Z" fill="var(--color-signal)"/></svg>
       <span>replikte</span>
     </a>
-    <ul class="nav-links">
+    <ul class="nav__links">
       <li><a href="#how">How it works</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
-    <a href="#contact" class="nav-cta">Talk to us</a>
+    <a class="nav__cta" href="https://calendly.com/replikte/30min" target="_blank" rel="noopener">Book a call</a>
   </nav>
 
-  <div class="hero">
-    <p class="eyebrow">For HVAC, plumbing, electrical, roofing & trades — 3 to 40 technicians</p>
-    <h1>You're booked solid in summer. And somehow still leaving money on the table.</h1>
-    <p class="deck">Replikte builds AI systems that run inside your trades business — following up on open estimates, filling your slow season with maintenance calls, turning one-time customers into recurring ones, and handling the scheduling coordination that currently depends on whoever answers the phone.</p>
-    <p class="subdeck">Not a new dispatch software. Not a call center. A system that works every day, knows your customer history, and keeps the revenue engine running whether it's your busiest week or your slowest.</p>
-    <div class="cta-row">
-      <a href="#contact" class="btn-primary">Start with a 30-minute conversation</a>
-      <a href="#how" class="btn-secondary">See how it works</a>
-      <span class="cta-meta">No pitch deck. No demo.</span>
-    </div>
-  </div>
+  <main>
+    <header class="hero-page hero-page--with-pills">
+      <p class="hero-eyebrow">For HVAC, plumbing, electrical, roofing &amp; trades — 3 to 40 technicians</p>
+      <h1>You&apos;re booked solid in summer. And somehow still leaving money on the table.</h1>
+      <p class="hero-lead" style="max-width:620px">Replikte builds AI systems that run inside your trades business — following up on open estimates, filling your slow season with maintenance calls, turning one-time customers into recurring ones, and handling the scheduling coordination that currently depends on whoever answers the phone.</p>
+      <p class="hero-sub" style="max-width:580px">Not a new dispatch software. Not a call center. A system that works every day, knows your customer history, and keeps the revenue engine running whether it&apos;s your busiest week or your slowest.</p>
+      <div class="hero-ctas">
+        <a class="btn btn--primary" href="https://calendly.com/replikte/30min" target="_blank" rel="noopener">Book a 30-minute conversation</a>
+        <a class="btn btn--secondary" href="#how">See how it works</a>
+        <span class="hero-ctas__meta">No pitch deck. No demo.</span>
+      </div>
+    </header>
 
-  <div style="padding: 0 40px;">
-    <div class="trades-strip">
-      <span class="practice-pill">HVAC</span>
-      <span class="practice-pill">Plumbing</span>
-      <span class="practice-pill">Electrical</span>
-      <span class="practice-pill">Roofing</span>
-      <span class="practice-pill">Landscaping</span>
-      <span class="practice-pill">Pest control</span>
-      <span class="practice-pill">Painting</span>
-      <span class="practice-pill">Flooring</span>
-    </div>
-  </div>
-
-  <div class="proof-band">
-    <p class="section-label">What trades clients stop losing</p>
-    <div class="proof-grid">
-      <div>
-        <p class="proof-stat">60–70%</p>
-        <p class="proof-label">of unsent or unfollowed estimates never become jobs — most from simple non-response</p>
-      </div>
-      <div>
-        <p class="proof-stat">$12k+</p>
-        <p class="proof-label">avg. annual revenue per maintenance agreement customer vs one-time job</p>
-      </div>
-      <div>
-        <p class="proof-stat">1 in 3</p>
-        <p class="proof-label">happy customers would leave a review if someone simply asked at the right moment</p>
-      </div>
-      <div>
-        <p class="proof-stat">Slow season</p>
-        <p class="proof-label">is optional — for companies with a system that works their customer base year-round</p>
+    <div class="pills-row" aria-label="Trades we serve">
+      <div class="pills-row__inner">
+        <span class="pill">HVAC</span><span class="pill">Plumbing</span><span class="pill">Electrical</span><span class="pill">Roofing</span>
+        <span class="pill">Landscaping</span><span class="pill">Pest control</span><span class="pill">Painting</span><span class="pill">Flooring</span>
       </div>
     </div>
-  </div>
 
-  <div class="content-section tinted">
-    <p class="section-label">What stops happening — and what starts</p>
-    <div class="scene-grid">
+    <section class="proof-band" aria-labelledby="proof-t">
+      <p class="section-label" id="proof-t">What trades clients stop losing</p>
+      <div class="proof-grid">
+        <div><p class="proof-stat">60–70%</p><p class="proof-label">of unsent or unfollowed estimates never become jobs — most from simple non-response</p></div>
+        <div><p class="proof-stat">$12k+</p><p class="proof-label">avg. annual revenue per maintenance agreement customer vs one-time job</p></div>
+        <div><p class="proof-stat">1 in 3</p><p class="proof-label">happy customers would leave a review if someone simply asked at the right moment</p></div>
+        <div><p class="proof-stat">Slow season</p><p class="proof-label">is optional — for companies with a system that works their customer base year-round</p></div>
+      </div>
+    </section>
 
+    <section class="section section--tinted">
+      <p class="section-label">What stops happening — and what starts</p>
       <div class="scene">
-        <p class="scene-tag">Estimates & follow-up</p>
-        <div>
-          <p class="scene-before-label">Before</p>
-          <p>"I sent out nine estimates last week. I've heard back from two. I know I should follow up but I've been slammed — by the time I get to it, they've called someone else."</p>
-        </div>
-        <div>
-          <p class="scene-after-label">After</p>
-          <p>Every estimate triggers an automatic follow-up sequence — a check-in at 48 hours, a nudge at day five, a final reach-out at day ten. You find out they went elsewhere, or you win the job.</p>
-        </div>
+        <p class="scene__tag">Estimates &amp; follow-up</p>
+        <div><p class="scene__label scene__label--before">Before</p><p class="scene__text scene__text--before">&ldquo;I sent out nine estimates last week. I&apos;ve heard back from two. I know I should follow up but I&apos;ve been slammed — by the time I get to it, they&apos;ve called someone else.&rdquo;</p></div>
+        <div><p class="scene__label scene__label--after">After</p><p class="scene__text scene__text--after">Every estimate triggers an automatic follow-up sequence — a check-in at 48 hours, a nudge at day five, a final reach-out at day ten. You find out they went elsewhere, or you win the job.</p></div>
       </div>
-
       <div class="scene">
-        <p class="scene-tag">Maintenance agreements & recurring revenue</p>
-        <div>
-          <p class="scene-before-label">Before</p>
-          <p>"We serviced that AC unit two summers ago. Never heard from them again. That's probably a $600 tune-up every year, plus whatever breaks."</p>
-        </div>
-        <div>
-          <p class="scene-after-label">After</p>
-          <p>Every completed job becomes a managed relationship. Service reminders go out at the right time of year, automatically. Slow season fills up with customers who were already yours.</p>
-        </div>
+        <p class="scene__tag">Maintenance agreements &amp; recurring revenue</p>
+        <div><p class="scene__label scene__label--before">Before</p><p class="scene__text scene__text--before">&ldquo;We serviced that AC unit two summers ago. Never heard from them again. That&apos;s probably a $600 tune-up every year, plus whatever breaks.&rdquo;</p></div>
+        <div><p class="scene__label scene__label--after">After</p><p class="scene__text scene__text--after">Every completed job becomes a managed relationship. Service reminders go out at the right time of year, automatically. Slow season fills up with customers who were already yours.</p></div>
       </div>
-
       <div class="scene">
-        <p class="scene-tag">Scheduling & dispatch coordination</p>
-        <div>
-          <p class="scene-before-label">Before</p>
-          <p>"A tech called in sick at 6:45am. I spent two hours rescheduling six appointments, calling customers, and shuffling trucks."</p>
-        </div>
-        <div>
-          <p class="scene-after-label">After</p>
-          <p>Rescheduling triggers go out to affected customers automatically with new time options. Techs get updated routes before they leave the house.</p>
-        </div>
+        <p class="scene__tag">Scheduling &amp; dispatch coordination</p>
+        <div><p class="scene__label scene__label--before">Before</p><p class="scene__text scene__text--before">&ldquo;A tech called in sick at 6:45am. I spent two hours rescheduling six appointments, calling customers, and shuffling trucks.&rdquo;</p></div>
+        <div><p class="scene__label scene__label--after">After</p><p class="scene__text scene__text--after">Rescheduling triggers go out to affected customers automatically with new time options. Techs get updated routes before they leave the house.</p></div>
       </div>
-
       <div class="scene">
-        <p class="scene-tag">Google reviews & reputation</p>
-        <div>
-          <p class="scene-before-label">Before</p>
-          <p>"We do great work. Our reviews don't show it. I always forget to ask, and the moment passes."</p>
-        </div>
-        <div>
-          <p class="scene-after-label">After</p>
-          <p>Review requests go out automatically one hour after a job closes — when the customer is standing in a cool house or watching the drain flow freely. Right moment, every time.</p>
-        </div>
+        <p class="scene__tag">Google reviews &amp; reputation</p>
+        <div><p class="scene__label scene__label--before">Before</p><p class="scene__text scene__text--before">&ldquo;We do great work. Our reviews don&apos;t show it. I always forget to ask, and the moment passes.&rdquo;</p></div>
+        <div><p class="scene__label scene__label--after">After</p><p class="scene__text scene__text--after">Review requests go out automatically one hour after a job closes — when the customer is standing in a cool house or watching the drain flow freely. Right moment, every time.</p></div>
       </div>
-
       <div class="scene">
-        <p class="scene-tag">Customer history & callbacks</p>
-        <div>
-          <p class="scene-before-label">Before</p>
-          <p>"My best tech left last year and half our customer knowledge left with him — it was all in his head."</p>
-        </div>
-        <div>
-          <p class="scene-after-label">After</p>
-          <p>Every job, every note, every part installed — all in one place, tied to the customer. The business stops depending on one person's memory.</p>
-        </div>
+        <p class="scene__tag">Customer history &amp; callbacks</p>
+        <div><p class="scene__label scene__label--before">Before</p><p class="scene__text scene__text--before">&ldquo;My best tech left last year and half our customer knowledge left with him — it was all in his head.&rdquo;</p></div>
+        <div><p class="scene__label scene__label--after">After</p><p class="scene__text scene__text--after">Every job, every note, every part installed — all in one place, tied to the customer. The business stops depending on one person&apos;s memory.</p></div>
       </div>
-
       <div class="scene">
-        <p class="scene-tag">Slow season — the real problem</p>
-        <div>
-          <p class="scene-before-label">Before</p>
-          <p>"October hits and the phones go quiet. Every year I say I'm going to build up maintenance agreements. Every year I'm too busy in summer."</p>
-        </div>
-        <div>
-          <p class="scene-after-label">After</p>
-          <p>Your existing customer base becomes your slow-season pipeline. Fall tune-up campaigns, annual inspection reminders — all running automatically from the jobs you already did.</p>
+        <p class="scene__tag">Slow season — the real problem</p>
+        <div><p class="scene__label scene__label--before">Before</p><p class="scene__text scene__text--before">&ldquo;October hits and the phones go quiet. Every year I say I&apos;m going to build up maintenance agreements. Every year I&apos;m too busy in summer.&rdquo;</p></div>
+        <div><p class="scene__label scene__label--after">After</p><p class="scene__text scene__text--after">Your existing customer base becomes your slow-season pipeline. Fall tune-up campaigns, annual inspection reminders — all running automatically from the jobs you already did.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__narrow">
+        <p class="section-label">The money that&apos;s already yours — just uncollected</p>
+        <div class="panel-paper">
+          <h3 class="subheading subheading--tight">Most trades companies are sitting on a revenue stream they built and then walked away from.</h3>
+          <p class="body-text">Every completed job is a future customer. Every satisfied homeowner is a referral waiting to be asked. The work to capture this revenue isn&apos;t finding new customers — it&apos;s staying in touch with the ones you already won.</p>
+          <div class="revenue-mini-grid">
+            <div class="revenue-mini"><p class="revenue-mini__amt">+$800–2,400</p><p class="revenue-mini__lbl">per recovered estimate — jobs won from follow-ups that would have gone silent</p></div>
+            <div class="revenue-mini"><p class="revenue-mini__amt">+$600–1,200</p><p class="revenue-mini__lbl">per reactivated maintenance customer — annual value of a recurring agreement</p></div>
+            <div class="revenue-mini"><p class="revenue-mini__amt">+$200–500</p><p class="revenue-mini__lbl">per referred job — from one ask at the right moment</p></div>
+            <div class="revenue-mini"><p class="revenue-mini__amt">10–15 hrs</p><p class="revenue-mini__lbl">per week returned to the owner — scheduling, follow-ups, callbacks</p></div>
+          </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-
-  <div class="content-section">
-    <p class="section-label">The money that's already yours — just uncollected</p>
-    <div class="money-box">
-      <h3>Most trades companies are sitting on a revenue stream they built and then walked away from.</h3>
-      <p class="intro">Every completed job is a future customer. Every satisfied homeowner is a referral waiting to be asked. The work to capture this revenue isn't finding new customers — it's staying in touch with the ones you already won.</p>
-      <div class="money-grid">
-        <div class="money-item">
-          <p class="money-amount">+$800–2,400</p>
-          <p class="money-source">per recovered estimate — jobs won from follow-ups that would have gone silent</p>
+    <section class="section section--tinted" id="pricing">
+      <p class="section-label">How we work with you — fixed monthly, no surprises</p>
+      <div class="tier-grid">
+        <div class="tier-card">
+          <p class="tier-card__name">Foundations</p>
+          <p class="tier-card__price">$1,200<span>/mo</span></p>
+          <p class="tier-card__sub">Fix the one leak costing you most</p>
+          <ul>
+            <li>2-week ops audit</li>
+            <li>One AI workflow — estimates, maintenance, or reviews</li>
+            <li>We run it, you don&apos;t manage it</li>
+            <li>Monthly review &amp; tuning</li>
+          </ul>
+          <p class="tier-card__note">Good starting point for owners who want to see results before going deeper</p>
         </div>
-        <div class="money-item">
-          <p class="money-amount">+$600–1,200</p>
-          <p class="money-source">per reactivated maintenance customer — annual value of a recurring agreement</p>
+        <div class="tier-card tier-card--featured">
+          <span class="tier-card__badge">Most common starting point</span>
+          <p class="tier-card__name">Full revenue ops</p>
+          <p class="tier-card__price">$2,800<span>/mo</span></p>
+          <p class="tier-card__sub">Estimates, maintenance, reviews, scheduling — all of it running</p>
+          <ul>
+            <li>4-week audit of your full customer &amp; job flow</li>
+            <li>Estimate follow-up, maintenance outreach, reviews</li>
+            <li>Scheduling coordination &amp; rescheduling</li>
+            <li>Customer history — all in one place</li>
+            <li>Bi-weekly reviews &amp; continuous tuning</li>
+          </ul>
+          <p class="tier-card__note">Most owners see ROI in the first 30 days</p>
         </div>
-        <div class="money-item">
-          <p class="money-amount">+$200–500</p>
-          <p class="money-source">per referred job — from one ask at the right moment</p>
-        </div>
-        <div class="money-item">
-          <p class="money-amount">10–15 hrs</p>
-          <p class="money-source">per week returned to the owner — scheduling, follow-ups, callbacks</p>
+        <div class="tier-card">
+          <p class="tier-card__name">Growth partner</p>
+          <p class="tier-card__price">$5,500<span>/mo</span></p>
+          <p class="tier-card__sub">Built to scale your operation</p>
+          <ul>
+            <li>Everything in Full revenue ops</li>
+            <li>Seasonal campaign planning &amp; execution</li>
+            <li>Multi-location or multi-crew coordination</li>
+            <li>New service line launch support</li>
+            <li>Weekly strategic sessions</li>
+          </ul>
+          <p class="tier-card__note">For owners actively growing — more trucks, more crews, new services</p>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="content-section tinted">
-    <p class="section-label">Why this is different from everything else you've tried</p>
-    <div class="why-box" style="background: var(--canvas);">
-      <h3>You've probably tried a CRM. It lasted three weeks.</h3>
-      <p>Software tools for trades businesses all have the same problem — they require someone to use them consistently. And when you're busy, nobody does.</p>
-      <p>What we build works differently because <strong>it doesn't wait for someone to remember</strong>. It's an AI system running inside your business every day — triggering follow-ups, sending reminders, flagging customers due for service, and routing callbacks without anyone managing it.</p>
-      <p><strong>A good office manager who handles all of this costs $50,000 a year and still has a learning curve.</strong> Our system is running inside your business within weeks, knows your customer base from day one, and compounds — the longer it runs, the more of your history it works with.</p>
-    </div>
-  </div>
+    <section class="section" id="how">
+      <p class="section-label">How it starts</p>
+      <ul class="process-list">
+        <li>
+          <span class="process-list__num">1</span>
+          <div>
+            <p class="process-list__title">We look at your customer base and job history (weeks 1–2)</p>
+            <p class="process-list__body">We go through your tickets, your estimates, your completed jobs. We find out exactly how much revenue is sitting in your existing customer base uncollected.</p>
+            <p class="process-list__ai">This is how our system gets trained on your customers specifically — their service history, their equipment, their timing.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process-list__num">2</span>
+          <div>
+            <p class="process-list__title">We show you the number (week 3)</p>
+            <p class="process-list__body">We put a dollar figure on what&apos;s leaking — open estimates, lapsed maintenance customers, missed referrals. You decide what to go after first.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process-list__num">3</span>
+          <div>
+            <p class="process-list__title">We build and activate (weeks 4–6)</p>
+            <p class="process-list__body">The AI workflows go live connected to the tools your team already uses. Nothing new to learn. It just starts running.</p>
+            <p class="process-list__ai">Your techs don&apos;t change how they work. Customers just start hearing from you at the right times.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process-list__num">4</span>
+          <div>
+            <p class="process-list__title">We run it, permanently (month 2 onward)</p>
+            <p class="process-list__body">Monthly retainer. We monitor, tune, and expand. Slow season outreach gets planned in August so it&apos;s ready in October.</p>
+            <p class="process-list__ai">Every job adds to the customer history the system works from.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-  <div id="pricing" class="content-section">
-    <p class="section-label">How we work with you — fixed monthly, no surprises</p>
-    <div class="tier-grid">
-      <div class="tier">
-        <p class="tier-name">Foundations</p>
-        <p class="tier-price">$1,200<span>/mo</span></p>
-        <p class="tier-sub">Fix the one leak costing you most</p>
-        <ul>
-          <li>2-week ops audit</li>
-          <li>One AI workflow — estimates, maintenance, or reviews</li>
-          <li>We run it, you don't manage it</li>
-          <li>Monthly review & tuning</li>
-        </ul>
-        <p class="tier-note">Good starting point for owners who want to see results before going deeper</p>
+    <section class="final-band" id="contact">
+      <h2>Start with one question.</h2>
+      <p class="final-band__body">How many estimates did you send in the last 60 days that you never followed up on? Whatever that number is — that&apos;s the first thing we fix.</p>
+      <div class="final-band__row">
+        <a class="btn btn--primary" href="https://calendly.com/replikte/30min" target="_blank" rel="noopener">Start the conversation</a>
+        <span class="final-band__meta">contact@replikte.com</span>
       </div>
-      <div class="tier featured">
-        <span class="tier-badge">Most common starting point</span>
-        <p class="tier-name">Full revenue ops</p>
-        <p class="tier-price">$2,800<span>/mo</span></p>
-        <p class="tier-sub">Estimates, maintenance, reviews, scheduling — all of it running</p>
-        <ul>
-          <li>4-week audit of your full customer & job flow</li>
-          <li>Estimate follow-up, maintenance outreach, reviews</li>
-          <li>Scheduling coordination & rescheduling</li>
-          <li>Customer history — all in one place</li>
-          <li>Bi-weekly reviews & continuous tuning</li>
-        </ul>
-        <p class="tier-note">Most owners see ROI in the first 30 days</p>
-      </div>
-      <div class="tier">
-        <p class="tier-name">Growth partner</p>
-        <p class="tier-price">$5,500<span>/mo</span></p>
-        <p class="tier-sub">Built to scale your operation</p>
-        <ul>
-          <li>Everything in Full revenue ops</li>
-          <li>Seasonal campaign planning & execution</li>
-          <li>Multi-location or multi-crew coordination</li>
-          <li>New service line launch support</li>
-          <li>Weekly strategic sessions</li>
-        </ul>
-        <p class="tier-note">For owners actively growing — more trucks, more crews, new services</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="how" class="content-section tinted">
-    <p class="section-label">How it starts</p>
-    <ul class="process-list">
-      <li class="process-item">
-        <div class="process-num">1</div>
-        <div class="process-text">
-          <h4>We look at your customer base and job history (weeks 1–2)</h4>
-          <p>We go through your tickets, your estimates, your completed jobs. We find out exactly how much revenue is sitting in your existing customer base uncollected.</p>
-          <p class="process-ai">This is how our system gets trained on your customers specifically — their service history, their equipment, their timing.</p>
-        </div>
-      </li>
-      <li class="process-item">
-        <div class="process-num">2</div>
-        <div class="process-text">
-          <h4>We show you the number (week 3)</h4>
-          <p>We put a dollar figure on what's leaking — open estimates, lapsed maintenance customers, missed referrals. You decide what to go after first.</p>
-        </div>
-      </li>
-      <li class="process-item">
-        <div class="process-num">3</div>
-        <div class="process-text">
-          <h4>We build and activate (weeks 4–6)</h4>
-          <p>The AI workflows go live connected to the tools your team already uses. Nothing new to learn. It just starts running.</p>
-          <p class="process-ai">Your techs don't change how they work. Customers just start hearing from you at the right times.</p>
-        </div>
-      </li>
-      <li class="process-item">
-        <div class="process-num">4</div>
-        <div class="process-text">
-          <h4>We run it, permanently (month 2 onward)</h4>
-          <p>Monthly retainer. We monitor, tune, and expand. Slow season outreach gets planned in August so it's ready in October.</p>
-          <p class="process-ai">Every job adds to the customer history the system works from.</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-
-  <div class="final-band" id="contact">
-    <h2>Start with one question.</h2>
-    <p>How many estimates did you send in the last 60 days that you never followed up on? Whatever that number is — that's the first thing we fix.</p>
-    <div class="cta-row">
-      <a href="mailto:contact@replikte.com" class="btn-final">Start the conversation</a>
-      <span class="final-meta">contact@replikte.com</span>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p class="footer-copy">&copy; Replikte LLC</p>
-    <ul class="footer-links">
-      <li><a href="construction.html">Construction</a></li>
-      <li><a href="trades.html">Trades</a></li>
-      <li><a href="law.html">Law firms</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand-row">
+          <svg width="22" height="14" viewBox="0 0 28 18" aria-hidden="true"><path d="M 2 4 L 2 14 L 10 9 Z" fill="var(--color-signal)"/><path d="M 26 4 L 26 14 L 18 9 Z" fill="var(--color-signal)"/></svg>
+          <span class="footer__name">replikte</span>
+        </div>
+        <p class="footer__tag">The operating layer your business has always needed.</p>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/company/replikte" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://x.com/ReplikteAI" target="_blank" rel="noopener noreferrer">X</a>
+        </div>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <p class="footer__col-title">Industries</p>
+          <ul>
+            <li><a href="construction.html">Construction</a></li>
+            <li><a href="trades.html">Trades</a></li>
+            <li><a href="law.html">Law firms</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Company</p>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://calendly.com/replikte/30min" target="_blank" rel="noopener noreferrer">Book a call</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Legal</p>
+          <ul>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of use</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Replikte LLC — Boca Raton, FL</p>
+      <a href="mailto:contact@replikte.com">contact@replikte.com</a>
+    </div>
   </footer>
-
 </div>
-
 </body>
 </html>

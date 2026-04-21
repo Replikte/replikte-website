@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 200 40">
+  <path d="M 4 12 L 4 28 L 16 20 Z" fill="#6E9AFF"></path>
+  <path d="M 30 12 L 30 28 L 18 20 Z" fill="#6E9AFF"></path>
+  <text x="42" y="29" style="font-family:&#39;DM Sans&#39;,&#39;Inter&#39;,&#39;Helvetica Neue&#39;,sans-serif; font-size:26px; font-weight:500; letter-spacing:-0.015em; fill:#F0EFE8;">replikte</text>
+</svg>

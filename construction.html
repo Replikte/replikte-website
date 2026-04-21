@@ -3,251 +3,230 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Replikte — Construction & Contracting</title>
+<meta name="description" content="Replikte for construction &amp; contracting — AI operations for subs, change orders, compliance, billing, and client communication.">
+<title>replikte — Construction &amp; Contracting</title>
+<link rel="icon" href="logos/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="page-wrapper">
-
-  <nav class="nav">
-    <a href="index.html" class="nav-logo">
-      <svg width="28" height="18" viewBox="0 0 28 18"><path d="M 2 4 L 2 14 L 10 9 Z" fill="var(--signal)"/><path d="M 26 4 L 26 14 L 18 9 Z" fill="var(--signal)"/></svg>
+<div class="site-wrap">
+  <nav class="nav" aria-label="Primary">
+    <a href="index.html" class="nav__logo">
+      <svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><path d="M 2 4 L 2 14 L 10 9 Z" fill="var(--color-signal)"/><path d="M 26 4 L 26 14 L 18 9 Z" fill="var(--color-signal)"/></svg>
       <span>replikte</span>
     </a>
-    <ul class="nav-links">
+    <ul class="nav__links">
       <li><a href="#how">How it works</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
-    <a href="#contact" class="nav-cta">Talk to us</a>
+    <a class="nav__cta" href="https://calendly.com/replikte/30min" target="_blank" rel="noopener">Book a call</a>
   </nav>
 
-  <div class="hero">
-    <p class="eyebrow">For construction & contracting companies — 15 to 60 people</p>
-    <h1>You're running a construction company. You shouldn't also be running a paper chase.</h1>
-    <p class="deck">Somewhere between managing subs, chasing signed change orders, and figuring out why job 7 is two weeks behind, the actual business — bidding, building, growing — gets pushed to the weekend. Replikte fixes the operational stuff that keeps falling through the cracks, so you can stop being the person who holds it all together by force of will.</p>
-    <p class="subdeck">Not a new software tool. Not a consultant who leaves. A system that works every day, learns how your jobs run, and keeps working whether you're on-site or not.</p>
-    <div class="cta-row">
-      <a href="#contact" class="btn-primary">Start with a 30-minute conversation</a>
-      <a href="#how" class="btn-secondary">See how it works</a>
-      <span class="cta-meta">No pitch deck. No demo.</span>
-    </div>
-  </div>
+  <main>
+    <header class="hero-page">
+      <p class="hero-eyebrow">For construction &amp; contracting companies — 15 to 60 people</p>
+      <h1>You&apos;re running a construction company. You shouldn&apos;t also be running a paper chase.</h1>
+      <p class="hero-lead" style="max-width:620px">Somewhere between managing subs, chasing signed change orders, and figuring out why job 7 is two weeks behind, the actual business — bidding, building, growing — gets pushed to the weekend. Replikte fixes the operational stuff that keeps falling through the cracks.</p>
+      <p class="hero-sub" style="max-width:580px">Not a new software tool. Not a consultant who leaves. A system that works every day, learns how your jobs run, and keeps working whether you&apos;re on-site or not.</p>
+      <div class="hero-ctas">
+        <a class="btn btn--primary" href="https://calendly.com/replikte/30min" target="_blank" rel="noopener">Book a 30-minute conversation</a>
+        <a class="btn btn--secondary" href="#how">See how it works</a>
+        <span class="hero-ctas__meta">No pitch deck. No demo.</span>
+      </div>
+    </header>
 
-  <div class="proof-band">
-    <p class="section-label">What construction clients stop losing</p>
-    <div class="proof-grid">
-      <div>
-        <p class="proof-stat">~14 hrs</p>
-        <p class="proof-label">avg. hours/week owners spend on ops admin instead of building</p>
+    <section class="proof-band" aria-labelledby="proof-c">
+      <p class="section-label" id="proof-c">What construction clients stop losing</p>
+      <div class="proof-grid">
+        <div><p class="proof-stat">~14 hrs</p><p class="proof-label">avg. hours/week owners spend on ops admin instead of building</p></div>
+        <div><p class="proof-stat">6–9%</p><p class="proof-label">of contract value lost to undocumented change orders and billing gaps</p></div>
+        <div><p class="proof-stat">Day 1</p><p class="proof-label">when our system starts running inside your business — no long rollout</p></div>
+        <div><p class="proof-stat">24/7</p><p class="proof-label">the system works — not just during office hours</p></div>
       </div>
-      <div>
-        <p class="proof-stat">6–9%</p>
-        <p class="proof-label">of contract value lost to undocumented change orders and billing gaps</p>
-      </div>
-      <div>
-        <p class="proof-stat">Day 1</p>
-        <p class="proof-label">when our system starts running inside your business — no long rollout</p>
-      </div>
-      <div>
-        <p class="proof-stat">24/7</p>
-        <p class="proof-label">the system works — not just during office hours</p>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="content-section tinted">
-    <p class="section-label">What stops happening when you work with us</p>
-    <div class="scene-grid">
-
+    <section class="section section--tinted">
+      <p class="section-label">What stops happening when you work with us</p>
       <div class="scene">
-        <p class="scene-tag">Subcontractor coordination</p>
-        <div>
-          <p class="scene-before-label">Before</p>
-          <p>"I've called Rodriguez three times. Nobody knows if his crew is showing up Tuesday or not."</p>
-        </div>
-        <div>
-          <p class="scene-after-label">After</p>
-          <p>Confirmation requests go out automatically 72 hours before. No-shows surface Monday morning, not Tuesday at 6am. You make one call — to rebook, not to chase.</p>
-        </div>
+        <p class="scene__tag">Subcontractor coordination</p>
+        <div><p class="scene__label scene__label--before">Before</p><p class="scene__text scene__text--before">&ldquo;I&apos;ve called Rodriguez three times. Nobody knows if his crew is showing up Tuesday or not.&rdquo;</p></div>
+        <div><p class="scene__label scene__label--after">After</p><p class="scene__text scene__text--after">Confirmation requests go out automatically 72 hours before. No-shows surface Monday morning, not Tuesday at 6am. You make one call — to rebook, not to chase.</p></div>
       </div>
-
       <div class="scene">
-        <p class="scene-tag">Change orders</p>
-        <div>
-          <p class="scene-before-label">Before</p>
-          <p>"We talked about it on-site. Now they're saying they never approved it and they're not paying the extra $8,000."</p>
-        </div>
-        <div>
-          <p class="scene-after-label">After</p>
-          <p>Every scope change gets documented and sent for signature the same day it's discussed. Nothing verbal, nothing lost, nothing disputed at invoice time.</p>
-        </div>
+        <p class="scene__tag">Change orders</p>
+        <div><p class="scene__label scene__label--before">Before</p><p class="scene__text scene__text--before">&ldquo;We talked about it on-site. Now they&apos;re saying they never approved it and they&apos;re not paying the extra $8,000.&rdquo;</p></div>
+        <div><p class="scene__label scene__label--after">After</p><p class="scene__text scene__text--after">Every scope change gets documented and sent for signature the same day it&apos;s discussed. Nothing verbal, nothing lost, nothing disputed at invoice time.</p></div>
       </div>
-
       <div class="scene">
-        <p class="scene-tag">Bid preparation</p>
-        <div>
-          <p class="scene-before-label">Before</p>
-          <p>"I spent all Sunday on that bid. Still not confident I got the material costs right. Lost it anyway."</p>
-        </div>
-        <div>
-          <p class="scene-after-label">After</p>
-          <p>Bid packages assembled from your past jobs and current pricing. Scope gaps flagged before you submit. Sunday stays yours.</p>
-        </div>
+        <p class="scene__tag">Bid preparation</p>
+        <div><p class="scene__label scene__label--before">Before</p><p class="scene__text scene__text--before">&ldquo;I spent all Sunday on that bid. Still not confident I got the material costs right. Lost it anyway.&rdquo;</p></div>
+        <div><p class="scene__label scene__label--after">After</p><p class="scene__text scene__text--after">Bid packages assembled from your past jobs and current pricing. Scope gaps flagged before you submit. Sunday stays yours.</p></div>
       </div>
-
       <div class="scene">
-        <p class="scene-tag">Client status & communication</p>
-        <div>
-          <p class="scene-before-label">Before</p>
-          <p>"A client called at 7am asking where things stood. I had to call my foreman, who had to call his guy. Took 40 minutes to answer a simple question."</p>
-        </div>
-        <div>
-          <p class="scene-after-label">After</p>
-          <p>Job status is current, always. Clients get a weekly update automatically. You answer the 7am call in 10 seconds — or they never need to make it.</p>
-        </div>
+        <p class="scene__tag">Client status &amp; communication</p>
+        <div><p class="scene__label scene__label--before">Before</p><p class="scene__text scene__text--before">&ldquo;A client called at 7am asking where things stood. I had to call my foreman, who had to call his guy. Took 40 minutes to answer a simple question.&rdquo;</p></div>
+        <div><p class="scene__label scene__label--after">After</p><p class="scene__text scene__text--after">Job status is current, always. Clients get a weekly update automatically. You answer the 7am call in 10 seconds — or they never need to make it.</p></div>
       </div>
-
       <div class="scene">
-        <p class="scene-tag">Compliance & documentation</p>
-        <div>
-          <p class="scene-before-label">Before</p>
-          <p>"We're waiting on an insurance cert from a sub. Three days now. It's holding up the whole job start."</p>
-        </div>
-        <div>
-          <p class="scene-after-label">After</p>
-          <p>Certs, lien waivers, safety docs — tracked, requested, and chased automatically until received. Nothing stalls because a piece of paper is missing.</p>
-        </div>
+        <p class="scene__tag">Compliance &amp; documentation</p>
+        <div><p class="scene__label scene__label--before">Before</p><p class="scene__text scene__text--before">&ldquo;We&apos;re waiting on an insurance cert from a sub. Three days now. It&apos;s holding up the whole job start.&rdquo;</p></div>
+        <div><p class="scene__label scene__label--after">After</p><p class="scene__text scene__text--after">Certs, lien waivers, safety docs — tracked, requested, and chased automatically until received. Nothing stalls because a piece of paper is missing.</p></div>
       </div>
-
       <div class="scene">
-        <p class="scene-tag">Invoicing & billing</p>
-        <div>
-          <p class="scene-before-label">Before</p>
-          <p>"End of month billing took two of us three days. We still missed some reimbursables. Cash flow is always tight because invoices go out late."</p>
-        </div>
-        <div>
-          <p class="scene-after-label">After</p>
-          <p>Invoices built from job records, hours, and materials the day work closes. Nothing missed. Cash flow improves because billing stops being the bottleneck.</p>
+        <p class="scene__tag">Invoicing &amp; billing</p>
+        <div><p class="scene__label scene__label--before">Before</p><p class="scene__text scene__text--before">&ldquo;End of month billing took two of us three days. We still missed some reimbursables. Cash flow is always tight because invoices go out late.&rdquo;</p></div>
+        <div><p class="scene__label scene__label--after">After</p><p class="scene__text scene__text--after">Invoices built from job records, hours, and materials the day work closes. Nothing missed. Cash flow improves because billing stops being the bottleneck.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__narrow">
+        <p class="section-label">Why this is different from everything else you&apos;ve tried</p>
+        <div class="panel-paper">
+          <h3 class="subheading">Most solutions fix the problem once. This one keeps it fixed.</h3>
+          <p class="body-text">You&apos;ve probably tried software that required training nobody did. Or brought in a consultant who gave you a plan and left. Or hired someone who handled it well until they quit.</p>
+          <p class="body-text">What we build is different because <strong>it isn&apos;t a person and it isn&apos;t a tool you manage</strong> — it&apos;s an AI system that runs inside your operation continuously. It follows up on things automatically. It notices when something is late before you do.</p>
+          <p class="body-text" style="margin-bottom:0"><strong>A good operations manager costs $85,000 a year, takes three months to learn your business, and eventually leaves.</strong> Our system is trained on how construction businesses run, is inside yours within weeks, and keeps getting better the longer it&apos;s there.</p>
         </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-
-  <div class="content-section">
-    <p class="section-label">Why this is different from everything else you've tried</p>
-    <div class="why-box">
-      <h3>Most solutions fix the problem once. This one keeps it fixed.</h3>
-      <p>You've probably tried software that required training nobody did. Or brought in a consultant who gave you a plan and left. Or hired someone who handled it well until they quit.</p>
-      <p>What we build is different because <strong>it isn't a person and it isn't a tool you manage</strong> — it's an AI system that runs inside your operation continuously. It follows up on things automatically. It notices when something is late before you do. It handles the coordination work that currently lives in your head or falls through the cracks when someone's having a bad week.</p>
-      <p><strong>A good operations manager costs $85,000 a year, takes three months to learn your business, and eventually leaves.</strong> Our system is trained on how construction businesses run, is inside yours within weeks, and keeps getting better the longer it's there. That's what makes the problems stop coming back — not discipline, not software, not another hire. A system that doesn't forget.</p>
-    </div>
-  </div>
-
-  <div id="pricing" class="content-section tinted">
-    <p class="section-label">How we work with you — fixed monthly, no surprises</p>
-    <div class="tier-grid">
-      <div class="tier">
-        <p class="tier-name">Foundations</p>
-        <p class="tier-price">$1,500<span>/mo</span></p>
-        <p class="tier-sub">One critical problem, solved permanently</p>
-        <ul>
-          <li>2-week ops audit</li>
-          <li>One AI workflow built & live</li>
-          <li>We run it, you don't manage it</li>
-          <li>Monthly review & tuning</li>
-        </ul>
-        <p class="tier-note">Good for owners who want to see it work before going deeper</p>
+    <section class="section section--tinted" id="pricing">
+      <p class="section-label">How we work with you — fixed monthly, no surprises</p>
+      <div class="tier-grid">
+        <div class="tier-card">
+          <p class="tier-card__name">Foundations</p>
+          <p class="tier-card__price">$1,500<span>/mo</span></p>
+          <p class="tier-card__sub">One critical problem, solved permanently</p>
+          <ul>
+            <li>2-week ops audit</li>
+            <li>One AI workflow built &amp; live</li>
+            <li>We run it, you don&apos;t manage it</li>
+            <li>Monthly review &amp; tuning</li>
+          </ul>
+          <p class="tier-card__note">Good for owners who want to see it work before going deeper</p>
+        </div>
+        <div class="tier-card tier-card--featured">
+          <span class="tier-card__badge">Most common starting point</span>
+          <p class="tier-card__name">Full operations</p>
+          <p class="tier-card__price">$3,500<span>/mo</span></p>
+          <p class="tier-card__sub">The whole back office running without you holding it together</p>
+          <ul>
+            <li>4-week deep ops audit</li>
+            <li>Subs, change orders, docs, billing — all of it</li>
+            <li>AI workflows connected across your jobs</li>
+            <li>Bi-weekly reviews &amp; continuous tuning</li>
+            <li>Dedicated Replikte contact</li>
+          </ul>
+          <p class="tier-card__note">The system learns your operation month over month — it gets better, not stale</p>
+        </div>
+        <div class="tier-card">
+          <p class="tier-card__name">Growth partner</p>
+          <p class="tier-card__price">$7,000<span>/mo</span></p>
+          <p class="tier-card__sub">Built to scale as you take on more work</p>
+          <ul>
+            <li>Everything in Full operations</li>
+            <li>Bid intelligence &amp; competitor pricing signals</li>
+            <li>Custom workflows as your jobs grow</li>
+            <li>Weekly strategic sessions</li>
+            <li>New AI capabilities as they emerge</li>
+          </ul>
+          <p class="tier-card__note">For owners ready to grow without the ops chaos that usually comes with it</p>
+        </div>
       </div>
-      <div class="tier featured">
-        <span class="tier-badge">Most common starting point</span>
-        <p class="tier-name">Full operations</p>
-        <p class="tier-price">$3,500<span>/mo</span></p>
-        <p class="tier-sub">The whole back office running without you holding it together</p>
-        <ul>
-          <li>4-week deep ops audit</li>
-          <li>Subs, change orders, docs, billing — all of it</li>
-          <li>AI workflows connected across your jobs</li>
-          <li>Bi-weekly reviews & continuous tuning</li>
-          <li>Dedicated Replikte contact</li>
-        </ul>
-        <p class="tier-note">The system learns your operation month over month — it gets better, not stale</p>
-      </div>
-      <div class="tier">
-        <p class="tier-name">Growth partner</p>
-        <p class="tier-price">$7,000<span>/mo</span></p>
-        <p class="tier-sub">Built to scale as you take on more work</p>
-        <ul>
-          <li>Everything in Full operations</li>
-          <li>Bid intelligence & competitor pricing signals</li>
-          <li>Custom workflows as your jobs grow</li>
-          <li>Weekly strategic sessions</li>
-          <li>New AI capabilities as they emerge</li>
-        </ul>
-        <p class="tier-note">For owners ready to grow without the ops chaos that usually comes with it</p>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <div id="how" class="content-section">
-    <p class="section-label">How it starts</p>
-    <ul class="process-list">
-      <li class="process-item">
-        <div class="process-num">1</div>
-        <div class="process-text">
-          <h4>We walk your operation (weeks 1–2)</h4>
-          <p>We study your bids, your job flow, your tools, your team communication — the way a new COO would in their first two weeks. We're not selling you a template. We're learning how your business actually runs.</p>
-          <p class="process-ai">This is how our system gets trained on your operation specifically — not on construction in general.</p>
-        </div>
-      </li>
-      <li class="process-item">
-        <div class="process-num">2</div>
-        <div class="process-text">
-          <h4>We show you exactly where time and money are leaking (week 3)</h4>
-          <p>We map the 3–5 places in your operation where things are falling through the cracks — and what each one is actually costing you. You decide what to fix first.</p>
-        </div>
-      </li>
-      <li class="process-item">
-        <div class="process-num">3</div>
-        <div class="process-text">
-          <h4>We build and activate (weeks 4–6)</h4>
-          <p>The AI workflows go live inside the tools your team already uses. No new software to learn. No training sessions. It just starts working.</p>
-          <p class="process-ai">Your team doesn't interact with "AI." They just notice things stop getting dropped.</p>
-        </div>
-      </li>
-      <li class="process-item">
-        <div class="process-num">4</div>
-        <div class="process-text">
-          <h4>We run it, permanently (month 2 onward)</h4>
-          <p>You pay the monthly retainer. We monitor, tune, and expand. As your jobs grow or change, the system adapts. You don't manage it — that's the point.</p>
-          <p class="process-ai">What we build in month one works better in month six. The system learns as it runs.</p>
-        </div>
-      </li>
-    </ul>
-  </div>
+    <section class="section" id="how">
+      <p class="section-label">How it starts</p>
+      <ul class="process-list">
+        <li>
+          <span class="process-list__num">1</span>
+          <div>
+            <p class="process-list__title">We walk your operation (weeks 1–2)</p>
+            <p class="process-list__body">We study your bids, your job flow, your tools, your team communication — the way a new COO would in their first two weeks. We&apos;re not selling you a template. We&apos;re learning how your business actually runs.</p>
+            <p class="process-list__ai">This is how our system gets trained on your operation specifically — not on construction in general.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process-list__num">2</span>
+          <div>
+            <p class="process-list__title">We show you exactly where time and money are leaking (week 3)</p>
+            <p class="process-list__body">We map the 3–5 places in your operation where things are falling through the cracks — and what each one is actually costing you. You decide what to fix first.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process-list__num">3</span>
+          <div>
+            <p class="process-list__title">We build and activate (weeks 4–6)</p>
+            <p class="process-list__body">The AI workflows go live inside the tools your team already uses. No new software to learn. No training sessions. It just starts working.</p>
+            <p class="process-list__ai">Your team doesn&apos;t interact with &ldquo;AI.&rdquo; They just notice things stop getting dropped.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process-list__num">4</span>
+          <div>
+            <p class="process-list__title">We run it, permanently (month 2 onward)</p>
+            <p class="process-list__body">You pay the monthly retainer. We monitor, tune, and expand. As your jobs grow or change, the system adapts. You don&apos;t manage it — that&apos;s the point.</p>
+            <p class="process-list__ai">What we build in month one works better in month six. The system learns as it runs.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-  <div class="final-band" id="contact">
-    <h2>Start with a 30-minute conversation.</h2>
-    <p>Tell us the one thing in your operation that keeps falling apart. We'll tell you honestly whether we can fix it — and what it would look like if we did. No pitch deck, no demo. Just a straight conversation about your business.</p>
-    <div class="cta-row">
-      <a href="mailto:contact@replikte.com" class="btn-final">Start the conversation</a>
-      <span class="final-meta">contact@replikte.com</span>
-    </div>
-  </div>
+    <section class="final-band" id="contact">
+      <h2>Start with a 30-minute conversation.</h2>
+      <p class="final-band__body">Tell us the one thing in your operation that keeps falling apart. We&apos;ll tell you honestly whether we can fix it — and what it would look like if we did. No pitch deck, no demo. Just a straight conversation about your business.</p>
+      <div class="final-band__row">
+        <a class="btn btn--primary" href="https://calendly.com/replikte/30min" target="_blank" rel="noopener">Start the conversation</a>
+        <span class="final-band__meta">contact@replikte.com</span>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p class="footer-copy">&copy; Replikte LLC</p>
-    <ul class="footer-links">
-      <li><a href="construction.html">Construction</a></li>
-      <li><a href="trades.html">Trades</a></li>
-      <li><a href="law.html">Law firms</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand-row">
+          <svg width="22" height="14" viewBox="0 0 28 18" aria-hidden="true"><path d="M 2 4 L 2 14 L 10 9 Z" fill="var(--color-signal)"/><path d="M 26 4 L 26 14 L 18 9 Z" fill="var(--color-signal)"/></svg>
+          <span class="footer__name">replikte</span>
+        </div>
+        <p class="footer__tag">The operating layer your business has always needed.</p>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/company/replikte" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://x.com/ReplikteAI" target="_blank" rel="noopener noreferrer">X</a>
+        </div>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <p class="footer__col-title">Industries</p>
+          <ul>
+            <li><a href="construction.html">Construction</a></li>
+            <li><a href="trades.html">Trades</a></li>
+            <li><a href="law.html">Law firms</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Company</p>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://calendly.com/replikte/30min" target="_blank" rel="noopener noreferrer">Book a call</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Legal</p>
+          <ul>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of use</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Replikte LLC — Boca Raton, FL</p>
+      <a href="mailto:contact@replikte.com">contact@replikte.com</a>
+    </div>
   </footer>
-
 </div>
-
 </body>
 </html>
