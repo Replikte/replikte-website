@@ -46,6 +46,22 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  /* Smooth in-page jumps; offset so anchors sit below the sticky nav */
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(72px + env(safe-area-inset-top, 0px));
+}
+
+@media (max-width: 720px) {
+  html {
+    /* Two-row nav: logo/CTA + link row */
+    scroll-padding-top: calc(116px + env(safe-area-inset-top, 0px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -114,12 +130,59 @@ a { color: var(--color-signal); }
 }
 
 .nav__links a {
+  position: relative;
   color: var(--color-text-secondary);
   text-decoration: none;
-  transition: color var(--motion-fast);
+  transition: color var(--motion-base);
 }
 
-.nav__links a:hover { color: var(--color-text-primary); }
+.nav__links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: opacity var(--motion-base), transform var(--motion-base);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav__links a:hover {
+    color: var(--color-text-primary);
+  }
+
+  .nav__links a:hover::after {
+    opacity: 0.55;
+    transform: scaleX(1);
+  }
+}
+
+.nav__links a:focus-visible {
+  color: var(--color-text-primary);
+  outline: 2px solid var(--color-signal);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.nav__links a:focus-visible::after {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+/* Touch nav row: tall targets — underline sits too low; rely on color + scroll instead */
+@media (max-width: 720px) {
+  .nav__links a::after {
+    display: none;
+  }
+
+  .nav__links a:active {
+    color: var(--color-text-primary);
+  }
+}
 
 .nav__cta {
   font-size: 13px;
@@ -129,11 +192,23 @@ a { color: var(--color-signal); }
   border-radius: 8px;
   padding: 8px 16px;
   text-decoration: none;
-  transition: opacity var(--motion-fast);
+  transition: opacity var(--motion-base), transform var(--motion-base);
   white-space: nowrap;
 }
 
-.nav__cta:hover { opacity: 0.88; color: var(--color-canvas); }
+@media (hover: hover) and (pointer: fine) {
+  .nav__cta:hover {
+    opacity: 0.88;
+    color: var(--color-canvas);
+    transform: translateY(-1px);
+  }
+}
+
+.nav__cta:focus-visible {
+  opacity: 0.88;
+  outline: 2px solid var(--color-signal);
+  outline-offset: 2px;
+}
 
 @media (max-width: 720px) {
   /* Grid keeps row 1 = logo | CTA (never stacked by flex-wrap). Row 2 = links in one band. */
@@ -1198,6 +1273,7 @@ h3.subheading--tight {
   font-size: 12px;
   color: var(--color-text-tertiary);
   text-decoration: none;
+  transition: color var(--motion-base);
 }
 
 .footer__socials a:hover {
@@ -1231,6 +1307,7 @@ h3.subheading--tight {
   font-size: 13px;
   color: var(--color-text-secondary);
   text-decoration: none;
+  transition: color var(--motion-base);
 }
 
 .footer__col a:hover {
@@ -1253,6 +1330,10 @@ h3.subheading--tight {
   font-size: 12px;
   color: var(--color-text-tertiary);
   text-decoration: none;
+}
+
+.footer__bottom a {
+  transition: color var(--motion-base);
 }
 
 .footer__bottom a:hover {
