@@ -125,7 +125,7 @@ const PageHome = ({ onNavigate }) => (
           Not new software to learn. Not a consultant who leaves. A system that runs inside your operation every day.
         </p>
         <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
-          <a href="https://calendly.com/replikte/30min" target="_blank" rel="noopener"
+          <a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener"
             style={{ fontSize: 14, fontWeight: 500, background: 'var(--color-ink)',
               color: 'var(--color-canvas)', borderRadius: 'var(--radius-md)', padding: '12px 22px',
               textDecoration: 'none', transition: 'opacity var(--motion-fast)' }}

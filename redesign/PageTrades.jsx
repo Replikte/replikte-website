@@ -53,7 +53,7 @@ const PageTrades = () => (
         Not a new dispatch software. Not a call center. A system that works every day, knows your customer history, and keeps the revenue engine running whether it's your busiest week or your slowest.
       </p>
       <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
-        <a href="https://calendly.com/replikte/30min" target="_blank" rel="noopener"
+        <a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener"
           style={{ fontSize: 14, fontWeight: 500, background: 'var(--color-ink)',
           color: 'var(--color-canvas)', borderRadius: 'var(--radius-md)', padding: '12px 22px', textDecoration: 'none' }}
           onMouseEnter={e => e.currentTarget.style.opacity = '0.88'} onMouseLeave={e => e.currentTarget.style.opacity = '1'}

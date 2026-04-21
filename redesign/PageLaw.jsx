@@ -53,7 +53,7 @@ const PageLaw = () => (
         Not a case management software you have to maintain. Not a virtual paralegal you have to manage. A system that works every matter, every day, and keeps working when your most organized person is out sick.
       </p>
       <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
-        <a href="https://calendly.com/replikte/30min" target="_blank" rel="noopener"
+        <a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener"
           style={{ fontSize: 14, fontWeight: 500, background: 'var(--color-ink)',
           color: 'var(--color-canvas)', borderRadius: 'var(--radius-md)', padding: '12px 22px', textDecoration: 'none' }}
           onMouseEnter={e => e.currentTarget.style.opacity = '0.88'} onMouseLeave={e => e.currentTarget.style.opacity = '1'}

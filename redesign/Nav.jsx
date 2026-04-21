@@ -54,7 +54,7 @@ const Nav = ({ currentPage, onNavigate }) => {
         ))}
       </ul>
 
-      <a href="https://calendly.com/replikte/30min" target="_blank" rel="noopener" style={{
+      <a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener" style={{
         fontSize: 13, fontWeight: 500,
         background: 'var(--color-ink)', color: 'var(--color-canvas)',
         borderRadius: 8, padding: '8px 16px',
