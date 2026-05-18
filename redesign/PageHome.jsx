@@ -176,6 +176,34 @@ const PageHome = ({ onNavigate }) => (
       </div>
     </Section>
 
+    {/* Our work — Nora + live customer */}
+    <Section id="our-work" style={{
+      paddingTop: 96, paddingBottom: 96,
+      borderTop: '3px solid var(--color-signal)',
+      boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.06)',
+    }}>
+      <div style={{ maxWidth: 720 }}>
+        <SectionLabel>Our work</SectionLabel>
+        <h2 id="our-work-heading" style={{ fontSize: 36, fontWeight: 500, lineHeight: 1.2, letterSpacing: '-0.02em', marginBottom: 16 }}>Nora — your business, in your pocket</h2>
+        <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--color-text-secondary)', marginBottom: 20, maxWidth: 680 }}>
+          Nora is an AI assistant on <strong>Telegram</strong>, tied to your Replikte organization, so owners and operators can ask questions, draft follow-ups, check the calendar, pull context from Gmail and Google Drive, and keep customer commitments moving <strong>without opening another desktop app</strong>. It meets you on the phone you already carry, speaks in your company&apos;s language (from your business profile), and uses approval-first controls for sensitive actions like sending email or creating calendar events.
+        </p>
+        <Body>Under the hood, Nora connects to the same org as the rest of Replikte: Gmail and Calendar (Google sign-in), Google Drive where admins have approved company files, org contacts, your business timezone, and optional <strong>skill packs</strong> (for example residential trades or cabinetry) so guidance matches how you actually sell and deliver — without inventing pricing, permits, or code requirements.</Body>
+        <Body style={{ marginBottom: 20 }}>Day to day, Nora handles conversation and planning, email search and drafts (send when you confirm), what&apos;s coming up on the calendar, Drive search over supported documents, reminders and recurring check-ins, and <strong>work items</strong> (tracked goals toward a customer or job) so nothing important lives only in your head.</Body>
+        <div style={{
+          padding: 28, border: '0.5px solid var(--color-line)', borderRadius: 'var(--radius-lg)',
+          background: 'var(--color-paper)', boxShadow: '0 12px 40px rgba(15, 61, 110, 0.06)',
+        }}>
+          <p style={{ fontSize: 11, fontWeight: 500, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--color-text-tertiary)', marginBottom: 8 }}>In deployment — Florida custom cabinets</p>
+          <p style={{ fontSize: 17, fontWeight: 500, marginBottom: 14 }}>CustomCabinetsUSA</p>
+          <Body style={{ marginBottom: 14 }}><strong>We&apos;re working with them right now</strong> on Nora inside their Replikte organization — custom residential cabinets in Florida.</Body>
+          <Body style={{ marginBottom: 14 }}><strong>Why Nora fits.</strong> Their work lives in long threads (revisions, hardware, install dates) with attention split between the shop, the road, and the showroom — not at a desk in a CRM. Telegram plus Google Workspace matches how the job actually gets sold and delivered.</Body>
+          <Body style={{ marginBottom: 14 }}><strong>What we&apos;re connecting.</strong> Same Replikte onboarding and org identity as the rest of the platform: Telegram for the owner (one-time link code), Gmail and Calendar, and Google Drive with their admin so Nora can draw on approved spec sheets, finish schedules, and proposal templates. Company context and Florida/timezone defaults keep scheduling and tone aligned with how they talk to homeowners.</Body>
+          <Body style={{ marginBottom: 0 }}><strong>How the owner uses Nora.</strong> Between site measures and installs, they can ask Nora to summarize a thread with a builder, draft a delay or status note to a homeowner, check an install window against Calendar, or keep a work item open until the countertop template lands — with sends and calendar writes confirmed on Telegram before anything goes out. Cabinetry-oriented skill content keeps next steps grounded in their workflow; Tina and the web app stay the home for deeper CRM and ops when someone is at a desk.</Body>
+        </div>
+      </div>
+    </Section>
+
     {/* How it works */}
     <Section id="how">
       <div style={{ maxWidth: 600, marginBottom: 40 }}>

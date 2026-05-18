@@ -12,7 +12,7 @@ const Nav = ({ currentPage, onNavigate }) => {
     ? [{ label: 'Home', page: 'home' }, { label: 'Industries', page: 'home', hash: '#industries' }, { label: 'Contact', hash: '#contact' }]
     : isVertical
     ? [{ label: 'How it works', hash: '#how' }, { label: 'Pricing', hash: '#pricing' }, { label: 'About', page: 'about' }]
-    : [{ label: 'How it works', hash: '#how' }, { label: 'Industries', hash: '#industries' }, { label: 'About', page: 'about' }];
+    : [{ label: 'How it works', hash: '#how' }, { label: 'Industries', hash: '#industries' }, { label: 'Our work', hash: '#our-work' }, { label: 'About', page: 'about' }];
 
   const handleLink = (e, link) => {
     if (link.page) { e.preventDefault(); onNavigate(link.page); }

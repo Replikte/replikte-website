@@ -545,6 +545,54 @@ a { color: var(--color-signal); }
   border-bottom: 0.5px solid var(--color-line);
 }
 
+/* —— Our work (home — Nora) —— */
+.section--our-work {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  border-top: 3px solid var(--color-signal);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.our-work__inner {
+  max-width: 720px;
+}
+
+.section-heading--our-work {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.our-work__deck {
+  font-size: 17px;
+  line-height: 1.65;
+  margin-bottom: 20px;
+  max-width: 680px;
+}
+
+.work-example-card--our-work {
+  margin-top: 8px;
+  padding: 28px;
+  box-shadow: 0 12px 40px rgba(15, 61, 110, 0.06);
+}
+
+.work-example-card--our-work .work-example-card__title {
+  font-size: 17px;
+}
+
+@media (max-width: 640px) {
+  .section-heading--our-work {
+    font-size: 28px;
+  }
+
+  .section--our-work {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
 .section__narrow {
   max-width: 680px;
 }
@@ -1142,6 +1190,30 @@ h3.subheading--tight {
   font-size: 13px;
   font-weight: 500;
   text-decoration: none;
+}
+
+/* —— Customer deployment card (e.g. Nora on home) —— */
+.work-example-card {
+  margin-top: 28px;
+  padding: 24px;
+  border: 0.5px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background: var(--color-paper);
+}
+
+.work-example-card__eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  margin-bottom: 8px;
+}
+
+.work-example-card__title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
 
 /* —— Final CTA band —— */
