@@ -409,7 +409,14 @@ a { color: var(--color-signal); }
 }
 
 .hero-page--with-pills {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
+}
+
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
 }
 
 .hero-page h1 {
@@ -451,15 +458,17 @@ a { color: var(--color-signal); }
   }
 }
 
-/* —— Pills —— */
+/* —— Pills (legacy row; prefer .hero-pills inside hero) —— */
 .pills-row {
-  padding: 24px 40px 0;
+  padding: 0 calc(40px + env(safe-area-inset-right, 0px)) 40px calc(40px + env(safe-area-inset-left, 0px));
+  max-width: 740px;
 }
 
 @media (max-width: 640px) {
   .pills-row {
     padding-left: max(20px, env(safe-area-inset-left));
     padding-right: max(20px, env(safe-area-inset-right));
+    padding-bottom: 32px;
   }
 }
 
@@ -1004,6 +1013,7 @@ h3.subheading--tight {
   font-size: 13px;
   color: var(--color-text-secondary);
   line-height: 2;
+  flex: 1 1 auto;
 }
 
 .tier-card__note {
@@ -1013,6 +1023,21 @@ h3.subheading--tight {
   padding-top: 14px;
   border-top: 0.5px solid var(--color-line);
   line-height: 1.5;
+}
+
+.tier-card__cta {
+  margin-top: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tier-card--featured .tier-card__cta.btn--primary {
+  background: var(--color-signal);
+}
+
+.tier-card--featured .tier-card__cta.btn--primary:hover {
+  opacity: 0.9;
+  color: var(--color-canvas);
 }
 
 @media (max-width: 900px) {
