@@ -694,15 +694,9 @@
   if (!root) return;
   var slides = root.querySelectorAll('.rk-slide');
   var dots = root.querySelectorAll('.rk-dot');
-  var stage = document.getElementById('rk-stage');
   var i = 0;
   var timer = null;
   var DURATION_MS = 7000;
-
-  function syncStageHeight() {
-    var active = root.querySelector('.rk-slide.is-active');
-    if (active) stage.style.minHeight = active.offsetHeight + 'px';
-  }
 
   function go(n) {
     i = (n + slides.length) % slides.length;
@@ -713,7 +707,6 @@
       d.classList.toggle('is-active', k === i);
       d.setAttribute('aria-selected', k === i ? 'true' : 'false');
     });
-    requestAnimationFrame(syncStageHeight);
   }
 
   function start() {
@@ -735,9 +728,6 @@
   root.addEventListener('mouseleave', start);
   root.addEventListener('focusin', stop);
   root.addEventListener('focusout', start);
-
-  syncStageHeight();
-  window.addEventListener('resize', syncStageHeight);
 
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     start();

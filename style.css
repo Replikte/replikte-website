@@ -512,6 +512,14 @@ a { color: var(--color-signal); }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
+  align-items: stretch;
+}
+
+.proof-grid > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
 }
 
 .proof-stat {
@@ -526,18 +534,36 @@ a { color: var(--color-signal); }
   font-size: 12px;
   line-height: 1.55;
   color: var(--color-text-secondary);
+  max-width: 100%;
 }
 
 @media (max-width: 900px) {
   .proof-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 28px 24px;
+    row-gap: 32px;
+  }
+
+  .proof-stat {
+    min-height: 2.5rem;
+    display: flex;
+    align-items: flex-end;
   }
 }
 
 @media (max-width: 520px) {
   .proof-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
+    row-gap: 24px;
   }
+
+  .proof-stat {
+    min-height: 0;
+    display: block;
+    font-size: 26px;
+  }
+
   .proof-band {
     padding: 40px max(20px, env(safe-area-inset-right)) 40px max(20px, env(safe-area-inset-left));
   }
@@ -965,10 +991,12 @@ a { color: var(--color-signal); }
 }
 
 .rk-stage {
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .rk-slide {
+  grid-area: 1 / 1;
   background: var(--rk-surface);
   border-radius: 14px;
   border: 0.5px solid var(--rk-border);
@@ -979,17 +1007,13 @@ a { color: var(--color-signal); }
   opacity: 0;
   transition: opacity 700ms ease-in-out;
   pointer-events: none;
+  z-index: 0;
 }
 
 .rk-slide.is-active {
   opacity: 1;
   pointer-events: auto;
-  position: relative;
-}
-
-.rk-slide:not(.is-active) {
-  position: absolute;
-  inset: 0;
+  z-index: 1;
 }
 
 .rk-head {
@@ -1151,6 +1175,17 @@ a { color: var(--color-signal); }
 
   .rk-task {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .rk-head {
+    flex-wrap: wrap;
+  }
+
+  .rk-metric {
+    white-space: normal;
+    text-align: right;
   }
 }
 
