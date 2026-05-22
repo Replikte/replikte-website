@@ -408,6 +408,40 @@ a { color: var(--color-signal); }
   max-width: 740px;
 }
 
+.hero-page--nora {
+  max-width: none;
+  display: flex;
+  gap: 40px 56px;
+  align-items: flex-start;
+  padding-bottom: 72px;
+}
+
+.hero-page--nora .hero-page__copy {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 560px;
+}
+
+.hero-page--nora .hero-page__visual {
+  flex: 0 0 min(420px, 46%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 4px;
+  min-width: 0;
+}
+
+.nora-demo-mount {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+.nora-demo-mount--hero {
+  position: sticky;
+  top: 24px;
+}
+
 .hero-page--with-pills {
   padding-bottom: 80px;
 }
@@ -444,6 +478,24 @@ a { color: var(--color-signal); }
   }
   .hero-page {
     padding: 64px max(20px, env(safe-area-inset-right)) 56px max(20px, env(safe-area-inset-left));
+  }
+  .hero-page--nora {
+    flex-direction: column;
+    gap: 36px;
+    padding-bottom: 56px;
+  }
+  .hero-page--nora .hero-page__copy {
+    max-width: none;
+  }
+  .hero-page--nora .hero-page__visual {
+    flex: none;
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    position: static;
+  }
+  .nora-demo-mount--hero {
+    position: static;
   }
 }
 
@@ -966,9 +1018,13 @@ a { color: var(--color-signal); }
 .replikte-nora--thread {
   --rn-bubble-in: var(--color-canvas);
   --rn-bubble-out: #E7ECF6;
-  --rn-phone-height: min(72vh, 620px);
-  --rn-iphone-width: 300px;
+  /* ~iPhone 15 Pro logical width (393pt), tall screen */
+  --rn-iphone-width: min(390px, 100%);
+  --rn-phone-height: min(78vh, 736px);
   max-width: var(--rn-iphone-width);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .replikte-nora--thread .replikte-nora__iphone {
@@ -977,8 +1033,8 @@ a { color: var(--color-signal); }
 
 .replikte-nora--thread .replikte-nora__iphone-shell {
   background: linear-gradient(145deg, #2a2a2e 0%, #141416 55%, #0d0d0f 100%);
-  border-radius: 44px;
-  padding: 10px 10px 16px;
+  border-radius: 52px;
+  padding: 12px 12px 18px;
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.08) inset,
     0 12px 40px rgba(10, 10, 10, 0.22),
@@ -1002,8 +1058,8 @@ a { color: var(--color-signal); }
 }
 
 .replikte-nora--thread .replikte-nora__iphone-island {
-  width: 88px;
-  height: 22px;
+  width: 112px;
+  height: 28px;
   border-radius: 20px;
   background: #000;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
@@ -1034,7 +1090,7 @@ a { color: var(--color-signal); }
   flex-direction: column;
   height: var(--rn-phone-height);
   max-height: var(--rn-phone-height);
-  border-radius: 28px;
+  border-radius: 36px;
   overflow: hidden;
   box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.2);
 }
@@ -1378,8 +1434,8 @@ a { color: var(--color-signal); }
 }
 
 .nora-page__split-visual {
-  flex: 0 0 320px;
-  max-width: 44%;
+  flex: 0 0 min(420px, 48%);
+  max-width: 48%;
   padding-top: 4px;
   position: sticky;
   top: 24px;
@@ -1398,7 +1454,7 @@ a { color: var(--color-signal); }
 
   .nora-page__split-visual {
     flex: none;
-    max-width: 320px;
+    max-width: 390px;
     width: 100%;
     margin: 0 auto;
     padding-top: 0;
