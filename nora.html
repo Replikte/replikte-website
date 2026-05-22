@@ -132,17 +132,25 @@
       <div class="section__narrow our-work__inner">
         <p class="section-label">Cabinet designer — example thread</p>
         <h2 class="section-heading section-heading--our-work" id="cabinet-demo-heading">A morning in Telegram</h2>
-        <p class="body-text our-work__deck">Placeholder names; real workflow. Scroll this section into view to watch the thread play inside the phone frame, or scroll the conversation yourself. Jordan asks about the day, drops a living-room blueprint and cabinet reference, and gets two scored concept passes with explicit caveats.</p>
+        <p class="body-text our-work__deck">Placeholder names; real workflow. Scroll this section into view to watch the thread play step by step inside an iPhone frame — messages, uploads, waits, and Nora&apos;s replies — ending with one-tap next steps. Or scroll the conversation yourself.</p>
         <div class="nora-page__split">
           <div class="nora-page__split-copy">
             <p class="body-text"><strong>1.</strong> Day brief — agenda, follow-ups, scheduled nudge.</p>
             <p class="body-text"><strong>2.</strong> Brief — blueprint for layout, photo for door style and brass niche lighting, notes on elevation D.</p>
             <p class="body-text"><strong>3.</strong> Concept — first pass with layout/style scores against the plan.</p>
             <p class="body-text"><strong>4.</strong> Refinement — second pass with central fireplace and higher layout match.</p>
+            <p class="body-text"><strong>5.</strong> Next steps — Nora suggests actions (proposal draft, client email, another pass) as Telegram-style buttons.</p>
             <p class="body-text" style="margin-bottom:0">Throughout: concept-only labeling so nothing is mistaken for construction documents.</p>
           </div>
           <div class="nora-page__split-visual">
-<div class="replikte-nora replikte-nora--thread" role="img" aria-label="Telegram thread: Nora summarizes the day, runs a cabinet designer from a blueprint and reference photo, delivers scored concept renders labeled as concepts only.">
+<div class="replikte-nora replikte-nora--thread" role="img" aria-label="Telegram thread on iPhone: Nora summarizes the day, runs a cabinet designer from a blueprint and reference photo, delivers scored concept renders, then offers next-step actions.">
+  <div class="replikte-nora__iphone" aria-hidden="true">
+    <div class="replikte-nora__iphone-shell">
+      <div class="replikte-nora__iphone-status">
+        <span class="replikte-nora__iphone-time">9:14</span>
+        <span class="replikte-nora__iphone-island"></span>
+        <span class="replikte-nora__iphone-icons"></span>
+      </div>
   <div class="replikte-nora__device">
 
     <!-- Header -->
@@ -158,15 +166,19 @@
     <div class="replikte-nora__thread">
 
       <!-- 1. Jordan asks about his day -->
-      <div class="replikte-nora__row replikte-nora__row--out">
+      <div class="replikte-nora__row replikte-nora__row--out" data-step="1">
         <div class="replikte-nora__bubble replikte-nora__bubble--out">
           <p>what's next on my agenda?</p>
           <span class="replikte-nora__time">9:14 AM</span>
         </div>
       </div>
 
+      <div class="replikte-nora__row replikte-nora__row--in replikte-nora__row--typing" data-typing-for="2" hidden>
+        <div class="replikte-nora__typing" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+
       <!-- 2. Nora reads back his day -->
-      <div class="replikte-nora__row replikte-nora__row--in">
+      <div class="replikte-nora__row replikte-nora__row--in" data-step="2">
         <div class="replikte-nora__bubble replikte-nora__bubble--in">
           <p>Three things on your plate today:</p>
           <p>
@@ -180,7 +192,7 @@
       </div>
 
       <!-- 3. Jordan drops the blueprint -->
-      <div class="replikte-nora__row replikte-nora__row--out">
+      <div class="replikte-nora__row replikte-nora__row--out" data-step="3">
         <div class="replikte-nora__bubble replikte-nora__bubble--out">
           <div class="replikte-nora__attachment replikte-nora__attachment--blueprint">
             <img src="assets/nora/blueprint-living-room.png" width="1024" height="685" alt="Living room blueprint — plan and elevations including TV wall, elevation D" loading="lazy" decoding="async">
@@ -189,12 +201,19 @@
         </div>
       </div>
 
-      <!-- 4. Jordan drops the cabinet reference and the brief -->
-      <div class="replikte-nora__row replikte-nora__row--out">
+      <!-- 4. Jordan drops the cabinet reference -->
+      <div class="replikte-nora__row replikte-nora__row--out" data-step="4">
         <div class="replikte-nora__bubble replikte-nora__bubble--out">
           <div class="replikte-nora__attachment replikte-nora__attachment--photo">
             <img src="assets/nora/reference-cabinet.png" width="960" height="691" alt="Cabinet and TV wall reference — built-ins, brass niches, niche lighting" loading="lazy" decoding="async">
           </div>
+          <span class="replikte-nora__time">10:21 AM</span>
+        </div>
+      </div>
+
+      <!-- 5. Jordan sends the brief -->
+      <div class="replikte-nora__row replikte-nora__row--out" data-step="5">
+        <div class="replikte-nora__bubble replikte-nora__bubble--out">
           <p>Run the cabinet designer for my living room.</p>
           <p>Use the blueprint for the room layout and built-in wall. Use the reference for door style and proportions.</p>
           <p>Match the TV wall from elevation D, brass and niche lighting from the reference.</p>
@@ -203,8 +222,12 @@
         </div>
       </div>
 
-      <!-- 5. Nora confirms -->
-      <div class="replikte-nora__row replikte-nora__row--in">
+      <div class="replikte-nora__row replikte-nora__row--in replikte-nora__row--typing" data-typing-for="6" hidden>
+        <div class="replikte-nora__typing" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+
+      <!-- 6. Nora confirms -->
+      <div class="replikte-nora__row replikte-nora__row--in" data-step="6">
         <div class="replikte-nora__bubble replikte-nora__bubble--in">
           <p>On it, Jordan. Running the cabinet designer on your living room — blueprint as the layout, your reference for door style and lighting.</p>
           <p><em>I'll send the concept here when it's ready.</em></p>
@@ -212,8 +235,13 @@
         </div>
       </div>
 
-      <!-- 6. First concept arrives -->
-      <div class="replikte-nora__row replikte-nora__row--in">
+      <div class="replikte-nora__row replikte-nora__row--in replikte-nora__row--typing replikte-nora__row--typing-long" data-typing-for="7" hidden>
+        <div class="replikte-nora__typing" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="replikte-nora__typing-label">Nora is running the cabinet designer…</p>
+      </div>
+
+      <!-- 7. First concept arrives -->
+      <div class="replikte-nora__row replikte-nora__row--in" data-step="7">
         <div class="replikte-nora__bubble replikte-nora__bubble--in">
           <div class="replikte-nora__render">
             <img alt="Concept render of the living room with built-in cabinetry, brass niche lighting and a marble TV recess" src="assets/nora/concept-pass-1.jpg">
@@ -235,8 +263,12 @@
         </div>
       </div>
 
-      <!-- 7. Second pass with the fireplace -->
-      <div class="replikte-nora__row replikte-nora__row--in">
+      <div class="replikte-nora__row replikte-nora__row--in replikte-nora__row--typing" data-typing-for="8" hidden>
+        <div class="replikte-nora__typing" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+
+      <!-- 8. Second pass with the fireplace -->
+      <div class="replikte-nora__row replikte-nora__row--in" data-step="8">
         <div class="replikte-nora__bubble replikte-nora__bubble--in">
           <div class="replikte-nora__render">
             <img alt="Second concept render showing the cabinetry with the central fireplace, TV recess and continuous marble base" src="assets/nora/concept-pass-2.jpg">
@@ -262,6 +294,29 @@
         </div>
       </div>
 
+      <div class="replikte-nora__row replikte-nora__row--in replikte-nora__row--typing" data-typing-for="9" hidden>
+        <div class="replikte-nora__typing" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+
+      <!-- 9. Nora — next steps -->
+      <div class="replikte-nora__row replikte-nora__row--in" data-step="9">
+        <div class="replikte-nora__bubble replikte-nora__bubble--in">
+          <p>Both concepts are in the thread — the fireplace pass hits <strong>10/10</strong> on layout. Ready for client-facing work?</p>
+          <div class="replikte-nora__keyboard" role="group" aria-label="Suggested next steps">
+            <button type="button" class="replikte-nora__keyboard-btn" tabindex="-1">Draft client proposal</button>
+            <button type="button" class="replikte-nora__keyboard-btn" tabindex="-1">Email concept pack to client M</button>
+            <button type="button" class="replikte-nora__keyboard-btn" tabindex="-1">Run a third pass — tweak hardware</button>
+          </div>
+          <span class="replikte-nora__time">10:26 AM</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="replikte-nora__composer" aria-hidden="true">
+      <span class="replikte-nora__composer-field">Message</span>
+    </div>
+  </div>
+      <div class="replikte-nora__iphone-home" aria-hidden="true"></div>
     </div>
   </div>
 
