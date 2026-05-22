@@ -966,7 +966,19 @@ a { color: var(--color-signal); }
 .replikte-nora--thread {
   --rn-bubble-in: var(--color-canvas);
   --rn-bubble-out: #E7ECF6;
+  --rn-phone-height: min(72vh, 640px);
   max-width: 460px;
+}
+
+.replikte-nora--thread .replikte-nora__device {
+  display: flex;
+  flex-direction: column;
+  height: var(--rn-phone-height);
+  max-height: var(--rn-phone-height);
+}
+
+.replikte-nora--thread .replikte-nora__header {
+  flex-shrink: 0;
 }
 
 .replikte-nora--thread .replikte-nora__sub {
@@ -987,11 +999,28 @@ a { color: var(--color-signal); }
 }
 
 .replikte-nora--thread .replikte-nora__thread {
+  flex: 1 1 auto;
+  min-height: 0;
   padding: 16px 16px 14px;
   background: var(--rn-surface);
   display: flex;
   flex-direction: column;
   gap: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--rn-text-faint) 35%, transparent) transparent;
+}
+
+.replikte-nora--thread .replikte-nora__thread::-webkit-scrollbar {
+  width: 6px;
+}
+
+.replikte-nora--thread .replikte-nora__thread::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--rn-text-faint) 40%, transparent);
+  border-radius: 3px;
 }
 
 .replikte-nora--thread .replikte-nora__row {
@@ -1062,78 +1091,25 @@ a { color: var(--color-signal); }
   border-radius: 10px;
   overflow: hidden;
   background: var(--rn-surface-alt);
-  aspect-ratio: 4 / 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--rn-text-faint);
-  font-size: 11px;
   border: 0.5px solid var(--rn-border);
+  line-height: 0;
 }
 
-.replikte-nora--thread .replikte-nora__attachment--blueprint {
-  background:
-    repeating-linear-gradient(0deg, rgba(10, 10, 10, 0.05) 0 1px, transparent 1px 28px),
-    repeating-linear-gradient(90deg, rgba(10, 10, 10, 0.05) 0 1px, transparent 1px 28px),
-    #FCFCFC;
-  position: relative;
+.replikte-nora--thread .replikte-nora__attachment img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
+  object-position: center;
+  background: #f8f8f8;
 }
 
-.replikte-nora--thread .replikte-nora__attachment--blueprint::before {
-  content: "";
-  position: absolute;
-  inset: 18% 14% 18% 14%;
-  border: 1.5px solid rgba(10, 10, 10, 0.55);
-  background:
-    linear-gradient(to right, rgba(10, 10, 10, 0.55) 0 1.5px, transparent 1.5px) 50% 0/1.5px 100% no-repeat,
-    linear-gradient(to bottom, rgba(10, 10, 10, 0.55) 0 1.5px, transparent 1.5px) 0 50%/100% 1.5px no-repeat;
-  transform: skew(-1deg, 0);
-}
-
-.replikte-nora--thread .replikte-nora__attachment--blueprint::after {
-  content: "blueprint — living room";
-  position: absolute;
-  bottom: 8px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 10px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: rgba(10, 10, 10, 0.55);
-}
-
-.replikte-nora--thread .replikte-nora__attachment--photo {
-  aspect-ratio: 4 / 3;
-  background:
-    linear-gradient(135deg, #d4c4a8 0%, #c9b89b 30%, #b8a283 60%, #9d8568 100%);
-  position: relative;
-}
-
-.replikte-nora--thread .replikte-nora__attachment--photo::before {
-  content: "";
-  position: absolute;
-  inset: 20% 30% 20% 30%;
-  background: rgba(0, 0, 0, 0.65);
-  border-radius: 4px;
-  box-shadow:
-    -50px 0 0 -8px rgba(255, 255, 255, 0.4),
-    50px 0 0 -8px rgba(255, 255, 255, 0.4),
-    0 0 0 12px rgba(255, 255, 255, 0.15);
-}
-
-.replikte-nora--thread .replikte-nora__attachment--photo::after {
-  content: "cabinet reference";
-  position: absolute;
-  bottom: 6px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 10px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+.replikte-nora--thread .replikte-nora__attachment--photo img {
+  max-height: 200px;
+  object-fit: cover;
+  object-position: center;
+  background: #ebe8e3;
 }
 
 .replikte-nora--thread .replikte-nora__render {
@@ -1244,6 +1220,9 @@ a { color: var(--color-signal); }
   flex: 0 0 460px;
   max-width: 44%;
   padding-top: 4px;
+  position: sticky;
+  top: 24px;
+  align-self: flex-start;
 }
 
 .nora-page__split-visual .replikte-nora {
