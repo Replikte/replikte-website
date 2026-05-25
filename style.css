@@ -1113,6 +1113,32 @@ a { color: var(--color-signal); }
   background: var(--rn-surface-alt);
   font-size: 13px;
   color: var(--rn-text-faint);
+  min-height: 1.25em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.replikte-nora--thread .replikte-nora__composer-field.is-typing {
+  color: var(--rn-text);
+  white-space: normal;
+}
+
+.replikte-nora--thread .replikte-nora__bubble p.is-typewriting::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 0.95em;
+  margin-left: 2px;
+  vertical-align: -0.1em;
+  background: color-mix(in srgb, var(--rn-accent) 70%, var(--rn-text));
+  animation: rn-caret-blink 0.9s step-end infinite;
+}
+
+@keyframes rn-caret-blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .replikte-nora--thread .replikte-nora__sub {
