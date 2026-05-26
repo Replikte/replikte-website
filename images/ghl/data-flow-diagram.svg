@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="dfd-title dfd-desc">
+  <title id="dfd-title">Data flow from sources through Replikte agents into GHL</title>
+  <desc id="dfd-desc">Your data sources connect to Replikte agents, which update Go High Level as the system of record.</desc>
+  <rect width="1200" height="720" fill="#0f1115"/>
+  <text x="200" y="52" text-anchor="middle" fill="#8a8a86" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500">Your data sources</text>
+  <text x="600" y="52" text-anchor="middle" fill="#8a8a86" font-family="system-ui, sans-serif" font-size="13" font-weight="500">Replikte agents</text>
+  <text x="1000" y="52" text-anchor="middle" fill="#8a8a86" font-family="system-ui, sans-serif" font-size="13" font-weight="500">GHL (system of record)</text>
+
+  <g font-family="system-ui, -apple-system, sans-serif">
+    <!-- row 1 -->
+    <rect x="40" y="72" width="320" height="72" rx="12" fill="#ebe8e2"/>
+    <text x="56" y="98" fill="#0f1115" font-size="14" font-weight="600">GHL contacts</text>
+    <text x="56" y="118" fill="#4a4a47" font-size="12">Opportunities, conversations</text>
+    <rect x="440" y="72" width="320" height="72" rx="12" fill="#e8e4f5"/>
+    <text x="456" y="98" fill="#0f1115" font-size="14" font-weight="600">Ingestion layer</text>
+    <text x="456" y="118" fill="#3d4a8f" font-size="12">Unified context graph</text>
+    <rect x="840" y="72" width="320" height="72" rx="12" fill="#dff5eb"/>
+    <text x="856" y="98" fill="#0f1115" font-size="14" font-weight="600">Updated fields</text>
+    <text x="856" y="118" fill="#0f6e56" font-size="12">Custom values populated</text>
+    <!-- row 2 -->
+    <rect x="40" y="160" width="320" height="72" rx="12" fill="#ebe8e2"/>
+    <text x="56" y="186" fill="#0f1115" font-size="14" font-weight="600">Meeting transcripts</text>
+    <text x="56" y="206" fill="#4a4a47" font-size="12">Fathom, Fireflies, Gong</text>
+    <rect x="440" y="160" width="320" height="72" rx="12" fill="#e8e4f5"/>
+    <text x="456" y="186" fill="#0f1115" font-size="14" font-weight="600">Enrichment crew</text>
+    <text x="456" y="206" fill="#3d4a8f" font-size="12">Signals and firmographics</text>
+    <rect x="840" y="160" width="320" height="72" rx="12" fill="#dff5eb"/>
+    <text x="856" y="186" fill="#0f1115" font-size="14" font-weight="600">Tasks and notes</text>
+    <text x="856" y="206" fill="#0f6e56" font-size="12">Auto-created in GHL</text>
+    <!-- row 3 -->
+    <rect x="40" y="248" width="320" height="72" rx="12" fill="#ebe8e2"/>
+    <text x="56" y="274" fill="#0f1115" font-size="14" font-weight="600">Email and SMS</text>
+    <text x="56" y="294" fill="#4a4a47" font-size="12">Inbound and outbound</text>
+    <rect x="440" y="248" width="320" height="72" rx="12" fill="#e8e4f5"/>
+    <text x="456" y="274" fill="#0f1115" font-size="14" font-weight="600">Conversation intel</text>
+    <text x="456" y="294" fill="#3d4a8f" font-size="12">Parses calls and emails</text>
+    <rect x="840" y="248" width="320" height="72" rx="12" fill="#dff5eb"/>
+    <text x="856" y="274" fill="#0f1115" font-size="14" font-weight="600">Drafted messages</text>
+    <text x="856" y="294" fill="#0f6e56" font-size="12">Ready for rep approval</text>
+    <!-- row 4 -->
+    <rect x="40" y="336" width="320" height="72" rx="12" fill="#ebe8e2"/>
+    <text x="56" y="362" fill="#0f1115" font-size="14" font-weight="600">Forms and ad leads</text>
+    <text x="56" y="382" fill="#4a4a47" font-size="12">Web, FB, referrals</text>
+    <rect x="440" y="336" width="320" height="72" rx="12" fill="#e8e4f5"/>
+    <text x="456" y="362" fill="#0f1115" font-size="14" font-weight="600">Follow-up agent</text>
+    <text x="456" y="382" fill="#3d4a8f" font-size="12">Crafts in rep voice</text>
+    <rect x="840" y="336" width="320" height="72" rx="12" fill="#dff5eb"/>
+    <text x="856" y="362" fill="#0f1115" font-size="14" font-weight="600">Assigned opportunities</text>
+    <text x="856" y="382" fill="#0f6e56" font-size="12">Routed to right rep</text>
+    <!-- row 5 -->
+    <rect x="40" y="424" width="320" height="72" rx="12" fill="#ebe8e2"/>
+    <text x="56" y="450" fill="#0f1115" font-size="14" font-weight="600">External enrichment</text>
+    <text x="56" y="470" fill="#4a4a47" font-size="12">Firmographics, territory</text>
+    <rect x="440" y="424" width="320" height="72" rx="12" fill="#e8e4f5"/>
+    <text x="456" y="450" fill="#0f1115" font-size="14" font-weight="600">Reactivation agent</text>
+    <text x="456" y="470" fill="#3d4a8f" font-size="12">Dormant pipeline</text>
+    <rect x="840" y="424" width="320" height="72" rx="12" fill="#dff5eb"/>
+    <text x="856" y="450" fill="#0f1115" font-size="14" font-weight="600">Triggered sequences</text>
+    <text x="856" y="470" fill="#0f6e56" font-size="12">Workflows in motion</text>
+  </g>
+
+  <g stroke="#4a4a47" stroke-width="1" stroke-dasharray="4 5" fill="none" opacity="0.55">
+    <path d="M360 108 H440"/><path d="M760 108 H840"/>
+    <path d="M360 196 H440"/><path d="M760 196 H840"/>
+    <path d="M360 284 H440"/><path d="M760 284 H840"/>
+    <path d="M360 372 H440"/><path d="M760 372 H840"/>
+    <path d="M360 460 H440"/><path d="M760 460 H840"/>
+  </g>
+
+  <text x="600" y="530" text-anchor="middle" fill="#8a8a86" font-family="system-ui, sans-serif" font-size="12">Agents continuously sync state  data flows both ways.</text>
+  <rect x="280" y="558" width="640" height="88" rx="14" fill="none" stroke="#4a4a47" stroke-width="1" stroke-dasharray="6 6"/>
+  <text x="600" y="592" text-anchor="middle" fill="#c4b8e8" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Replikte platform</text>
+  <text x="600" y="618" text-anchor="middle" fill="#6e9aff" font-family="system-ui, sans-serif" font-size="12">Multi-tenant, encrypted per customer, infrastructure included</text>
+</svg>

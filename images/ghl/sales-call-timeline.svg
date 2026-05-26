@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="tl-title tl-desc">
+  <title id="tl-title">The 60 seconds after a sales call</title>
+  <desc id="tl-desc">Five steps from transcript to follow-up draft with zero rep effort.</desc>
+  <rect width="1200" height="320" fill="#0f1115"/>
+  <text x="48" y="48" fill="#b5b4ad" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="500">The 60 seconds after a sales call</text>
+  <text x="48" y="72" fill="#6b6864" font-family="system-ui, sans-serif" font-size="13">Zero rep effort. Everything happens between hangup and the next sip of coffee.</text>
+
+  <g font-family="system-ui, -apple-system, sans-serif">
+    <g transform="translate(48, 120)">
+      <text x="0" y="0" fill="#6b6864" font-size="11">0:00</text>
+      <circle cx="24" cy="36" r="22" fill="#ebe8e2"/>
+      <text x="24" y="42" text-anchor="middle" fill="#0f1115" font-size="16" font-weight="600">1</text>
+      <text x="0" y="88" fill="#f0efe8" font-size="14" font-weight="600">Transcript lands</text>
+      <text x="0" y="108" fill="#8a8a86" font-size="12">Meeting tool finalizes</text>
+    </g>
+    <g transform="translate(268, 120)">
+      <text x="0" y="0" fill="#6b6864" font-size="11">0:10</text>
+      <circle cx="24" cy="36" r="22" fill="#e8e4f5"/>
+      <text x="24" y="42" text-anchor="middle" fill="#0f1115" font-size="16" font-weight="600">2</text>
+      <text x="0" y="88" fill="#f0efe8" font-size="14" font-weight="600">Agent parses</text>
+      <text x="0" y="108" fill="#8a8a86" font-size="12">Objections, timeline, fit</text>
+    </g>
+    <g transform="translate(488, 120)">
+      <text x="0" y="0" fill="#6b6864" font-size="11">0:25</text>
+      <circle cx="24" cy="36" r="22" fill="#d4dcff"/>
+      <text x="24" y="42" text-anchor="middle" fill="#0f1115" font-size="16" font-weight="600">3</text>
+      <text x="0" y="88" fill="#f0efe8" font-size="14" font-weight="600">GHL updates</text>
+      <text x="0" y="108" fill="#8a8a86" font-size="12">Fields, stage, notes</text>
+    </g>
+    <g transform="translate(708, 120)">
+      <text x="0" y="0" fill="#6b6864" font-size="11">0:40</text>
+      <circle cx="24" cy="36" r="22" fill="#dff5eb"/>
+      <text x="24" y="42" text-anchor="middle" fill="#0f1115" font-size="16" font-weight="600">4</text>
+      <text x="0" y="88" fill="#f0efe8" font-size="14" font-weight="600">Tasks created</text>
+      <text x="0" y="108" fill="#8a8a86" font-size="12">Scheduled in rep's queue</text>
+    </g>
+    <g transform="translate(928, 120)">
+      <text x="0" y="0" fill="#6b6864" font-size="11">0:60</text>
+      <circle cx="24" cy="36" r="22" fill="#c8ebe0"/>
+      <text x="24" y="42" text-anchor="middle" fill="#0f1115" font-size="16" font-weight="600">5</text>
+      <text x="0" y="88" fill="#f0efe8" font-size="14" font-weight="600">Follow-up draft</text>
+      <text x="0" y="108" fill="#8a8a86" font-size="12">Ready in rep&apos;s inbox</text>
+    </g>
+    <path d="M92 156 H248" stroke="#4a4a47" stroke-width="1" opacity="0.4"/>
+    <path d="M312 156 H468" stroke="#4a4a47" stroke-width="1" opacity="0.4"/>
+    <path d="M532 156 H688" stroke="#4a4a47" stroke-width="1" opacity="0.4"/>
+    <path d="M752 156 H908" stroke="#4a4a47" stroke-width="1" opacity="0.4"/>
+  </g>
+</svg>
