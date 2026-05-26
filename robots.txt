@@ -1,9 +1,7 @@
-# https://replikte.github.io/replikte-website/
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://replikte.github.io/replikte-website/sitemap.xml
+Sitemap: https://www.replikte.com/sitemap.xml
 
 # AI / LLM crawlers (allow — adjust if you need to block training)
 User-agent: GPTBot
