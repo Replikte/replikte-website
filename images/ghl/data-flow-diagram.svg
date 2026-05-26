@@ -67,7 +67,7 @@
     <path d="M360 460 H440"/><path d="M760 460 H840"/>
   </g>
 
-  <text x="600" y="530" text-anchor="middle" fill="#8a8a86" font-family="system-ui, sans-serif" font-size="12">Agents continuously sync state  data flows both ways.</text>
+  <text x="600" y="530" text-anchor="middle" fill="#8a8a86" font-family="system-ui, sans-serif" font-size="12">Agents continuously sync state -  data flows both ways.</text>
   <rect x="280" y="558" width="640" height="88" rx="14" fill="none" stroke="#4a4a47" stroke-width="1" stroke-dasharray="6 6"/>
   <text x="600" y="592" text-anchor="middle" fill="#c4b8e8" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Replikte platform</text>
   <text x="600" y="618" text-anchor="middle" fill="#6e9aff" font-family="system-ui, sans-serif" font-size="12">Multi-tenant, encrypted per customer, infrastructure included</text>
