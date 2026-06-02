@@ -31,6 +31,7 @@
 <meta name="twitter:description" content="What Nora does in Telegram: day briefs, real briefs, client-ready concepts, self-check scores, and concept-only labeling. Part of every Replikte engagement.">
 <meta name="twitter:image" content="https://replikte.github.io/replikte-website/logos/apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -75,7 +76,7 @@
       <li><a href="index.html#our-work">Our work</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
-    <a class="nav__cta" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a call</a>
+    <span class="nav__cta gcal-booking" data-label="Book a call"></span>
   </nav>
 
   
@@ -87,7 +88,7 @@
         <p class="hero-lead">Nora is how you use the systems we embed in your business. Same phone you already check all day. Same tone as pinging a coworker. Underneath: your calendar, inbox, files, CRM, and the workflows we built for how you actually sell and deliver.</p>
         <p class="hero-sub">Not a chatbot you sign up for. No app store listing. Nora comes with the engagement — wired, tuned, and run by the Replikte team.</p>
         <div class="hero-ctas">
-          <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a 30-minute conversation</a>
+          <span class="btn btn--primary gcal-booking" data-label="Book a 30-minute conversation"></span>
           <a class="btn btn--secondary" href="#cabinet-demo">Walk through the cabinet example</a>
         </div>
       </div>
@@ -176,7 +177,7 @@
       <h2>See whether Nora fits your operation.</h2>
       <p class="final-band__body">Book a short conversation. Tell us the one thing that keeps falling through — slow concepts, missed follow-ups, chaos between the shop and the road. We&apos;ll say honestly if an engagement makes sense.</p>
       <div class="final-band__row">
-        <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a 30-minute conversation</a>
+        <span class="btn btn--primary gcal-booking" data-label="Book a 30-minute conversation"></span>
         <span class="final-band__meta">contact@replikte.com</span>
       </div>
     </section>
@@ -216,7 +217,7 @@
           <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="nora.html">Nora</a></li>
-            <li><a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener noreferrer">Book a call</a></li>
+            <li><span class="gcal-booking" data-label="Book a call"></span></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -418,5 +419,7 @@
 </div>
 </template>
 <script src="nora-demo.js" defer></script>
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script src="booking.js" defer></script>
 </body>
 </html>

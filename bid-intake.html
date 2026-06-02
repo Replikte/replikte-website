@@ -36,6 +36,7 @@
 <meta name="twitter:description" content="An agentic system that triages incoming general contractor bid packages. Built with a commercial millwork shop; patterns extend to drywall, steel, mechanical, glazing.">
 <meta name="twitter:image" content="https://www.replikte.com/images/bid-intake/og-image.png">
 <link rel="stylesheet" href="style.css">
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <!-- JSON-LD Service schema -->
 <script type="application/ld+json">
 {
@@ -71,7 +72,7 @@
       <li><a href="#faq">FAQ</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
-    <a class="nav__cta" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a call</a>
+    <span class="nav__cta gcal-booking" data-label="Book a call"></span>
   </nav>
 
   <main>
@@ -81,7 +82,7 @@
         <h1>Bid intake for specialty subcontractors.</h1>
         <p class="hero-lead">A crew of agents that turns inbound general contractor bid packages — emails, PDFs, drawings — into structured triage, scope checklists, and risk flags. Built with a commercial millwork shop. The same patterns extend to drywall, structural steel, mechanical, glazing, and other specialty trades.</p>
         <div class="hero-ctas">
-          <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a 30-min bid intake walkthrough</a>
+          <span class="btn btn--primary gcal-booking" data-label="Book a 30-min bid intake walkthrough"></span>
           <a class="btn btn--secondary" href="#how-it-works">See how it works ↓</a>
         </div>
       </div>
@@ -291,7 +292,7 @@
       <h2>Book a 30-minute bid intake walkthrough.</h2>
       <p class="final-band__body">We&apos;ll look at three recent bid packages your team triaged, show you what the crew would have produced, and discuss whether your trade and bid volume are a fit. No pitch, no obligation.</p>
       <div class="final-band__row">
-        <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book the walkthrough →</a>
+        <span class="btn btn--primary gcal-booking" data-label="Book the walkthrough →"></span>
       </div>
     </section>
 
@@ -342,7 +343,7 @@
 
   <section class="ghl-pre-footer" aria-label="Book a bid intake walkthrough">
     <p>Stop sorting bids. Start choosing them.</p>
-    <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book the walkthrough →</a>
+    <span class="btn btn--primary gcal-booking" data-label="Book the walkthrough →"></span>
   </section>
 
   <footer class="footer">
@@ -379,7 +380,7 @@
           <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="nora.html">Nora</a></li>
-            <li><a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener noreferrer">Book a call</a></li>
+            <li><span class="gcal-booking" data-label="Book a call"></span></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -397,5 +398,7 @@
     </div>
   </footer>
 </div>
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script src="booking.js" defer></script>
 </body>
 </html>

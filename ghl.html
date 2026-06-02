@@ -36,6 +36,7 @@
 <meta name="twitter:description" content="A crew of agents that lives inside your Go High Level CRM. Ingests data, enriches contacts from calls and emails, drafts follow-ups, and reactivates dormant pipeline.">
 <meta name="twitter:image" content="https://www.replikte.com/images/ghl/og-image.png">
 <link rel="stylesheet" href="style.css">
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -82,7 +83,7 @@
       <li><a href="#faq">FAQ</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
-    <a class="nav__cta" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a call</a>
+    <span class="nav__cta gcal-booking" data-label="Book a call"></span>
   </nav>
 
   <main>
@@ -92,7 +93,7 @@
         <h1>Agents that live inside your Go High Level.</h1>
         <p class="hero-lead">We extend Go High Level with purpose-built agents that ingest your data, enrich every contact, and act on opportunities 24/7 — drafting follow-ups, populating fields from calls, and reactivating dormant pipeline. Your CRM stops being a place reps log work. It becomes the work.</p>
         <div class="hero-ctas">
-          <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a 30-min GHL audit</a>
+          <span class="btn btn--primary gcal-booking" data-label="Book a 30-min GHL audit"></span>
           <a class="btn btn--secondary" href="#how-it-works">See how it works ↓</a>
         </div>
       </div>
@@ -324,7 +325,7 @@
       <h2>Book a 30-minute GHL audit.</h2>
       <p class="final-band__body">We&apos;ll walk through your current GHL setup, identify the three highest-leverage agents for your sales motion, and show you what month-one delivery looks like. No pitch, no obligation.</p>
       <div class="final-band__row">
-        <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book the audit →</a>
+        <span class="btn btn--primary gcal-booking" data-label="Book the audit →"></span>
       </div>
     </section>
 
@@ -375,7 +376,7 @@
 
   <section class="ghl-pre-footer" aria-label="Book a GHL audit">
     <p>Stop logging work. Start closing it.</p>
-    <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a GHL audit →</a>
+    <span class="btn btn--primary gcal-booking" data-label="Book a GHL audit →"></span>
   </section>
 
   <footer class="footer">
@@ -411,7 +412,7 @@
           <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="nora.html">Nora</a></li>
-            <li><a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener noreferrer">Book a call</a></li>
+            <li><span class="gcal-booking" data-label="Book a call"></span></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -429,5 +430,7 @@
     </div>
   </footer>
 </div>
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script src="booking.js" defer></script>
 </body>
 </html>

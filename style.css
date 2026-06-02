@@ -303,6 +303,42 @@ a { color: var(--color-signal); }
 
 .btn--primary:hover { opacity: 0.88; color: var(--color-canvas); }
 
+/* Google Calendar appointment scheduling hosts */
+.gcal-booking {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.gcal-booking > div,
+.gcal-booking iframe {
+  display: block;
+}
+
+.nav__cta.gcal-booking {
+  padding: 0;
+  background: transparent;
+}
+
+.btn.gcal-booking {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: default;
+}
+
+.footer__col .gcal-booking a {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+.footer__col .gcal-booking a:hover {
+  color: var(--color-text-primary);
+}
+
 .btn--secondary {
   background: transparent;
   color: var(--color-text-primary);

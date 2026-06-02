@@ -30,6 +30,7 @@
 <meta name="twitter:title" content="replikte — Home Services &amp; Trades">
 <meta name="twitter:image" content="https://replikte.github.io/replikte-website/logos/apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -73,7 +74,7 @@
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
-    <a class="nav__cta" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a call</a>
+    <span class="nav__cta gcal-booking" data-label="Book a call"></span>
   </nav>
 
   <main>
@@ -83,7 +84,7 @@
       <p class="hero-lead" style="max-width:620px">Replikte builds AI systems that run inside your trades business — following up on open estimates, filling your slow season with maintenance calls, turning one-time customers into recurring ones, and handling the scheduling coordination that currently depends on whoever answers the phone.</p>
       <p class="hero-sub" style="max-width:580px">Not a new dispatch software. Not a call center. A system that works every day, knows your customer history, and keeps the revenue engine running whether it&apos;s your busiest week or your slowest.</p>
       <div class="hero-ctas">
-        <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a 30-minute conversation</a>
+        <span class="btn btn--primary gcal-booking" data-label="Book a 30-minute conversation"></span>
         <a class="btn btn--secondary" href="#how">See how it works</a>
         <span class="hero-ctas__meta">No pitch deck. No demo.</span>
       </div>
@@ -167,7 +168,7 @@
             <li>Monthly review &amp; tuning</li>
           </ul>
           <p class="tier-card__note">Good starting point for owners who want to see results before going deeper</p>
-          <a class="btn btn--secondary tier-card__cta" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a call</a>
+          <span class="btn btn--secondary tier-card__cta gcal-booking" data-label="Book a call"></span>
         </div>
         <div class="tier-card tier-card--featured">
           <span class="tier-card__badge">Most common starting point</span>
@@ -182,7 +183,7 @@
             <li>Bi-weekly reviews &amp; continuous tuning</li>
           </ul>
           <p class="tier-card__note">Most owners see ROI in the first 30 days</p>
-          <a class="btn btn--primary tier-card__cta" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a call</a>
+          <span class="btn btn--primary tier-card__cta gcal-booking" data-label="Book a call"></span>
         </div>
         <div class="tier-card">
           <p class="tier-card__name">Growth partner</p>
@@ -196,7 +197,7 @@
             <li>Weekly strategic sessions</li>
           </ul>
           <p class="tier-card__note">For owners actively growing — more trucks, more crews, new services</p>
-          <a class="btn btn--secondary tier-card__cta" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a call</a>
+          <span class="btn btn--secondary tier-card__cta gcal-booking" data-label="Book a call"></span>
         </div>
       </div>
     </section>
@@ -242,7 +243,7 @@
       <h2>Start with one question.</h2>
       <p class="final-band__body">How many estimates did you send in the last 60 days that you never followed up on? Whatever that number is — that&apos;s the first thing we fix.</p>
       <div class="final-band__row">
-        <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Start the conversation</a>
+        <span class="btn btn--primary gcal-booking" data-label="Start the conversation"></span>
         <span class="final-band__meta">contact@replikte.com</span>
       </div>
     </section>
@@ -282,7 +283,7 @@
           <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="nora.html">Nora</a></li>
-            <li><a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener noreferrer">Book a call</a></li>
+            <li><span class="gcal-booking" data-label="Book a call"></span></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -300,5 +301,7 @@
     </div>
   </footer>
 </div>
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script src="booking.js" defer></script>
 </body>
 </html>

@@ -30,6 +30,7 @@
 <meta name="twitter:title" content="replikte — Construction &amp; Contracting">
 <meta name="twitter:image" content="https://replikte.github.io/replikte-website/logos/apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -73,7 +74,7 @@
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
-    <a class="nav__cta" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a call</a>
+    <span class="nav__cta gcal-booking" data-label="Book a call"></span>
   </nav>
 
   <main>
@@ -83,7 +84,7 @@
       <p class="hero-lead" style="max-width:620px">Somewhere between managing subs, chasing signed change orders, and figuring out why job 7 is two weeks behind, the actual business — bidding, building, growing — gets pushed to the weekend. Replikte fixes the operational stuff that keeps falling through the cracks.</p>
       <p class="hero-sub" style="max-width:580px">Not a new software tool. Not a consultant who leaves. A system that works every day, learns how your jobs run, and keeps working whether you&apos;re on-site or not.</p>
       <div class="hero-ctas">
-        <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a 30-minute conversation</a>
+        <span class="btn btn--primary gcal-booking" data-label="Book a 30-minute conversation"></span>
         <a class="btn btn--secondary" href="#how">See how it works</a>
         <span class="hero-ctas__meta">No pitch deck. No demo.</span>
       </div>
@@ -159,7 +160,7 @@
             <li>Monthly review &amp; tuning</li>
           </ul>
           <p class="tier-card__note">Good for owners who want to see it work before going deeper</p>
-          <a class="btn btn--secondary tier-card__cta" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a call</a>
+          <span class="btn btn--secondary tier-card__cta gcal-booking" data-label="Book a call"></span>
         </div>
         <div class="tier-card tier-card--featured">
           <span class="tier-card__badge">Most common starting point</span>
@@ -174,7 +175,7 @@
             <li>Dedicated Replikte contact</li>
           </ul>
           <p class="tier-card__note">The system learns your operation month over month — it gets better, not stale</p>
-          <a class="btn btn--primary tier-card__cta" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a call</a>
+          <span class="btn btn--primary tier-card__cta gcal-booking" data-label="Book a call"></span>
         </div>
         <div class="tier-card">
           <p class="tier-card__name">Growth partner</p>
@@ -188,7 +189,7 @@
             <li>New AI capabilities as they emerge</li>
           </ul>
           <p class="tier-card__note">For owners ready to grow without the ops chaos that usually comes with it</p>
-          <a class="btn btn--secondary tier-card__cta" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a call</a>
+          <span class="btn btn--secondary tier-card__cta gcal-booking" data-label="Book a call"></span>
         </div>
       </div>
     </section>
@@ -234,7 +235,7 @@
       <h2>Start with a 30-minute conversation.</h2>
       <p class="final-band__body">Tell us the one thing in your operation that keeps falling apart. We&apos;ll tell you honestly whether we can fix it — and what it would look like if we did. No pitch deck, no demo. Just a straight conversation about your business.</p>
       <div class="final-band__row">
-        <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Start the conversation</a>
+        <span class="btn btn--primary gcal-booking" data-label="Start the conversation"></span>
         <span class="final-band__meta">contact@replikte.com</span>
       </div>
     </section>
@@ -274,7 +275,7 @@
           <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="nora.html">Nora</a></li>
-            <li><a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener noreferrer">Book a call</a></li>
+            <li><span class="gcal-booking" data-label="Book a call"></span></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -292,5 +293,7 @@
     </div>
   </footer>
 </div>
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script src="booking.js" defer></script>
 </body>
 </html>

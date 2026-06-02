@@ -19,6 +19,7 @@
 <link rel="apple-touch-icon" href="/replikte-website/logos/apple-touch-icon.png" sizes="180x180">
 <link rel="manifest" href="/replikte-website/site.webmanifest">
 <link rel="stylesheet" href="/replikte-website/style.css">
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <meta name="theme-color" content="#F5F7FA">
 </head>
 <body>
@@ -33,7 +34,7 @@
       <li><a href="/replikte-website/index.html#industries">Industries</a></li>
       <li><a href="/replikte-website/about.html">About</a></li>
     </ul>
-    <a class="nav__cta" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener noreferrer">Book a call</a>
+    <span class="nav__cta gcal-booking" data-label="Book a call"></span>
   </nav>
 
   <main class="section" style="padding-top: 64px; padding-bottom: 80px;">
@@ -74,7 +75,7 @@
           <p class="footer__col-title">Company</p>
           <ul>
             <li><a href="/replikte-website/about.html">About</a></li>
-            <li><a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener noreferrer">Book a call</a></li>
+            <li><span class="gcal-booking" data-label="Book a call"></span></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -92,5 +93,7 @@
     </div>
   </footer>
 </div>
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script src="/replikte-website/booking.js" defer></script>
 </body>
 </html>

@@ -32,6 +32,7 @@
 <meta name="twitter:description" content="Proposals going out late. Follow-ups falling through. Invoices forgotten. Customers who needed one more call. Replikte runs the operational layer of owner-operated companies — continuously, on monthly retainer.">
 <meta name="twitter:image" content="https://replikte.github.io/replikte-website/logos/apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,7 +108,7 @@
       <li><a href="nora.html">Nora</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
-    <a class="nav__cta" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a call</a>
+    <span class="nav__cta gcal-booking" data-label="Book a call"></span>
   </nav>
 
   <main>
@@ -117,7 +118,7 @@
         <p class="hero-lead">Not the work itself. The stuff around it. Proposals going out too slow. Follow-ups falling through. Invoices that should have gone out weeks ago. Quotes that died waiting for someone to send the next email. Customers who needed one more call — and never got it.</p>
         <p class="hero-sub">We come in, learn how your business actually runs, and build the systems that handle all of it. Then we stay. Monthly retainer. We keep building. We don&apos;t disappear.</p>
         <div class="hero-ctas">
-          <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a 30-minute conversation</a>
+          <span class="btn btn--primary gcal-booking" data-label="Book a 30-minute conversation"></span>
           <a class="btn btn--secondary" href="#how">See how it works</a>
           <span class="hero-ctas__meta">Tell us what&apos;s breaking. We&apos;ll tell you honestly if we can fix it.</span>
         </div>
@@ -666,7 +667,7 @@
       <h2>Start with one question:<br>what keeps falling apart?</h2>
       <p class="final-band__body">Tell us the one thing in your operation that keeps breaking down. We&apos;ll tell you honestly whether we can fix it, and what it would look like if we did.</p>
       <div class="final-band__row">
-        <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a 30-minute conversation</a>
+        <span class="btn btn--primary gcal-booking" data-label="Book a 30-minute conversation"></span>
         <span class="final-band__meta">30 minutes. No pitch deck. No demo.</span>
       </div>
       <p class="final-band__meta" style="margin-top:20px;max-width:560px;line-height:1.65">Not ready to talk? Email us the one thing breaking down in your operation — <a href="mailto:contact@replikte.com" style="color:inherit;font-weight:500;text-decoration:underline">contact@replikte.com</a> — and we&apos;ll reply with what we&apos;d actually do about it.</p>
@@ -707,7 +708,7 @@
           <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="nora.html">Nora</a></li>
-            <li><a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener noreferrer">Book a call</a></li>
+            <li><span class="gcal-booking" data-label="Book a call"></span></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -773,5 +774,7 @@
 })();
 </script>
 
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script src="booking.js" defer></script>
 </body>
 </html>

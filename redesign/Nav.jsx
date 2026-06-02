@@ -54,15 +54,10 @@ const Nav = ({ currentPage, onNavigate }) => {
         ))}
       </ul>
 
-      <a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener" style={{
+      <BookingButton label="Book a call" className="gcal-booking" style={{
         fontSize: 13, fontWeight: 500,
-        background: 'var(--color-ink)', color: 'var(--color-canvas)',
         borderRadius: 8, padding: '8px 16px',
-        textDecoration: 'none', transition: 'opacity var(--motion-fast)',
-      }}
-        onMouseEnter={e => e.currentTarget.style.opacity = '0.88'}
-        onMouseLeave={e => e.currentTarget.style.opacity = '1'}
-      >Book a call</a>
+      }} />
     </nav>
   );
 };

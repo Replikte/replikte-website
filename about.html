@@ -31,6 +31,7 @@
 <meta name="twitter:description" content="Proposals going out late. Follow-ups falling through. Invoices forgotten. Customers who needed one more call. Replikte runs the operational layer of owner-operated companies — continuously, on monthly retainer.">
 <meta name="twitter:image" content="https://replikte.github.io/replikte-website/logos/apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -74,7 +75,7 @@
       <li><a href="index.html#industries">Industries</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a class="nav__cta" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a call</a>
+    <span class="nav__cta gcal-booking" data-label="Book a call"></span>
   </nav>
 
   <main>
@@ -130,7 +131,7 @@
       <h2>Start with one question:<br>what keeps falling apart?</h2>
       <p class="final-band__body">Tell us the one thing in your operation that keeps breaking down. We&apos;ll tell you honestly whether we can fix it, and what it would look like if we did.</p>
       <div class="final-band__row">
-        <a class="btn btn--primary" href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener">Book a 30-minute conversation</a>
+        <span class="btn btn--primary gcal-booking" data-label="Book a 30-minute conversation"></span>
         <span class="final-band__meta">30 minutes. No pitch deck. No demo.</span>
       </div>
     </section>
@@ -170,7 +171,7 @@
           <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="nora.html">Nora</a></li>
-            <li><a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener noreferrer">Book a call</a></li>
+            <li><span class="gcal-booking" data-label="Book a call"></span></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -188,5 +189,7 @@
     </div>
   </footer>
 </div>
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script src="booking.js" defer></script>
 </body>
 </html>

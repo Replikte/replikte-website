@@ -133,13 +133,10 @@ const FinalBand = ({ headline, body, cta, meta }) => (
     <p style={{ fontSize: 16, lineHeight: 1.7, color: 'var(--color-canvas)', opacity: 0.72,
       marginBottom: 28, maxWidth: 540 }}>{body}</p>
     <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
-      <a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener"
-        style={{ fontSize: 14, fontWeight: 500,
-        background: 'var(--color-canvas)', color: 'var(--color-ink)',
-        borderRadius: 'var(--radius-md)', padding: '12px 22px', textDecoration: 'none' }}
-        onMouseEnter={e => e.currentTarget.style.opacity = '0.88'}
-        onMouseLeave={e => e.currentTarget.style.opacity = '1'}
-      >{cta}</a>
+      <BookingButton label={cta} className="gcal-booking" style={{
+        fontSize: 14, fontWeight: 500,
+        borderRadius: 'var(--radius-md)', padding: '12px 22px',
+      }} />
       <span style={{ fontSize: 13, color: 'var(--color-canvas)', opacity: 0.55 }}>{meta || '30 minutes. No pitch deck. No demo.'}</span>
     </div>
   </div>
@@ -197,11 +194,7 @@ const Footer = ({ onNavigate }) => (
                 onMouseLeave={e => e.target.style.color = 'var(--color-text-secondary)'}
               >{label}</a></li>
             ))}
-            <li><a href="https://book.neo.space/replikte/30-min" target="_blank" rel="noopener noreferrer"
-              style={{ fontSize: 13, color: 'var(--color-text-secondary)', textDecoration: 'none' }}
-              onMouseEnter={e => e.target.style.color = 'var(--color-text-primary)'}
-              onMouseLeave={e => e.target.style.color = 'var(--color-text-secondary)'}
-            >Book a call</a></li>
+            <li><BookingButton label="Book a call" className="gcal-booking" style={{ fontSize: 13 }} /></li>
           </ul>
         </div>
         <div>
