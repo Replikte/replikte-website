@@ -38,24 +38,8 @@ const HOME_TESTIMONIALS = [
     logo: '../images/customers/evergreen-strategic-systems.png',
     logoAlt: 'Evergreen Strategic Systems',
     logoWide: true,
-    featured: true,
     link: 'https://evergreenstrategicsystems.com',
     linkLabel: 'evergreenstrategicsystems.com',
-  },
-  {
-    quote: 'The change order disputes just stopped. We used to lose $8–12k a year to verbal agreements nobody could prove. Now everything\'s documented the same day it\'s discussed. I stopped thinking about it.',
-    name: 'Marcus T.',
-    title: 'Owner, 22-person general contractor — South Florida',
-  },
-  {
-    quote: 'I sent out 40 estimates in March. By April I had eight jobs I probably would have lost — just from the follow-up sequence running automatically. That\'s not counting the maintenance customers who came back.',
-    name: 'Donna R.',
-    title: 'Owner, HVAC company — 14 technicians',
-  },
-  {
-    quote: 'My paralegal used to spend two hours a day on status emails and document chasing. She doesn\'t anymore. Clients stopped calling because they\'re already informed. The bar complaint risk is just gone.',
-    name: 'James K.',
-    title: 'Managing partner, family law firm — 6 attorneys',
   },
 ];
 
