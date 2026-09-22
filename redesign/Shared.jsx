@@ -249,24 +249,63 @@ const Body = ({ children, style }) => (
   <p style={{ fontSize: 16, lineHeight: 1.75, color: 'var(--color-text-secondary)', marginBottom: 14, ...style }}>{children}</p>
 );
 
-const Testimonials = ({ items }) => (
+const Testimonials = ({ items }) => {
+  const quotes = items.filter(t => t.quote && !t.featured);
+  const profiles = items.filter(t => t.featured || !t.quote);
+  return (
   <Section>
     <SectionLabel>What clients say</SectionLabel>
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
-      {items.map((t, i) => (
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 12 }}>
+      {quotes.map((t, i) => (
         <div key={i} style={{ background: 'var(--color-canvas)', border: '0.5px solid var(--color-line)',
           borderRadius: 'var(--radius-lg)', padding: '28px 32px', display: 'flex', flexDirection: 'column' }}>
           <p style={{ fontSize: 15, lineHeight: 1.7, color: 'var(--color-text-primary)',
             marginBottom: 24, fontStyle: 'normal', flex: 1 }}>"{t.quote}"</p>
-          <div style={{ borderTop: '0.5px solid var(--color-line)', paddingTop: 16 }}>
-            <p style={{ fontSize: 13, fontWeight: 500, color: 'var(--color-text-primary)', marginBottom: 2 }}>{t.name}</p>
-            <p style={{ fontSize: 12, color: 'var(--color-text-tertiary)' }}>{t.title}</p>
+          <div style={{ borderTop: '0.5px solid var(--color-line)', paddingTop: 16, display: 'flex', alignItems: 'center', gap: 14 }}>
+            {t.logo && (
+              <img src={t.logo} alt={t.logoAlt || ''} width="64" height="64"
+                style={{ width: 64, height: 64, borderRadius: 10, objectFit: 'cover', flexShrink: 0 }} />
+            )}
+            <div>
+              <p style={{ fontSize: 13, fontWeight: 500, color: 'var(--color-text-primary)', marginBottom: 2 }}>{t.name}</p>
+              <p style={{ fontSize: 12, color: 'var(--color-text-tertiary)' }}>{t.title}</p>
+              {t.link && (
+                <a href={t.link} target="_blank" rel="noopener noreferrer"
+                  style={{ display: 'inline-block', marginTop: 4, fontSize: 12, fontWeight: 500, color: 'var(--color-signal)', textDecoration: 'none' }}
+                >{t.linkLabel || 'Website'}</a>
+              )}
+            </div>
           </div>
         </div>
       ))}
     </div>
+    {profiles.map((t, i) => (
+      <div key={i} style={{ marginTop: 12, padding: '28px 32px',
+        background: 'var(--color-canvas)', border: '0.5px solid var(--color-line)', borderRadius: 'var(--radius-lg)' }}>
+        {t.quote && (
+          <p style={{ fontSize: 15, lineHeight: 1.7, color: 'var(--color-text-primary)', marginBottom: 24 }}>"{t.quote}"</p>
+        )}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 22, borderTop: t.quote ? '0.5px solid var(--color-line)' : 'none', paddingTop: t.quote ? 16 : 0 }}>
+          {t.logo && (
+            <img src={t.logo} alt={t.logoAlt || ''} width="160" height="60"
+              style={{ height: 56, width: 'auto', maxWidth: 220, borderRadius: 8, background: '#fff', padding: '6px 10px', flexShrink: 0 }} />
+          )}
+          <div>
+            <p style={{ fontSize: 13, fontWeight: 500, marginBottom: 2 }}>{t.name}</p>
+            {t.title && <p style={{ fontSize: 12, color: 'var(--color-text-tertiary)' }}>{t.title}</p>}
+            {t.summary && <p style={{ fontSize: 14, lineHeight: 1.5, color: 'var(--color-text-secondary)' }}>{t.summary}</p>}
+            {t.link && (
+              <a href={t.link} target="_blank" rel="noopener noreferrer"
+                style={{ display: 'inline-block', marginTop: 4, fontSize: 13, fontWeight: 500, color: 'var(--color-signal)', textDecoration: 'none' }}
+              >{t.linkLabel || 'Website'}</a>
+            )}
+          </div>
+        </div>
+      </div>
+    ))}
   </Section>
-);
+  );
+};
 
 Object.assign(window, {
   SectionLabel, ProofBand, Scene, IndustryCard,

@@ -23,6 +23,26 @@ const COMPARISON_ITEMS = [
 
 const HOME_TESTIMONIALS = [
   {
+    quote: 'I used to spend at least 10 hours a week doing follow ups and administrative tasks, now it\'s all taken care by Nora and Replikte Operational Layer. I can focus more on the shop production.',
+    name: 'Gus Bellini',
+    title: 'Owner, Custom Cabinetry Corp',
+    logo: '../images/customers/custom-cabinetry-corp.png',
+    logoAlt: 'Custom Cabinetry Corp',
+    link: 'https://www.instagram.com/yourcustomcabinetry/',
+    linkLabel: 'Instagram',
+  },
+  {
+    quote: 'Replikte took so many hours of the work I usually do or my VAs over GHL.',
+    name: 'Brett L.',
+    title: 'Owner, Evergreen Strategic Systems',
+    logo: '../images/customers/evergreen-strategic-systems.png',
+    logoAlt: 'Evergreen Strategic Systems',
+    logoWide: true,
+    featured: true,
+    link: 'https://evergreenstrategicsystems.com',
+    linkLabel: 'evergreenstrategicsystems.com',
+  },
+  {
     quote: 'The change order disputes just stopped. We used to lose $8–12k a year to verbal agreements nobody could prove. Now everything\'s documented the same day it\'s discussed. I stopped thinking about it.',
     name: 'Marcus T.',
     title: 'Owner, 22-person general contractor — South Florida',
