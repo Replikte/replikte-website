@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Operational Hub by Replikte. From paper tickets to one operational hub. Fictional demo and sample data.">
+  <rect width="1200" height="630" fill="#0F1115"/>
+  <rect width="1200" height="6" fill="#1A47B8"/>
+  <path d="M80 78 L80 102 L100 90 Z" fill="#6E9AFF"/>
+  <path d="M128 78 L128 102 L108 90 Z" fill="#6E9AFF"/>
+  <text x="148" y="98" fill="#6E9AFF" font-family="DM Sans, sans-serif" font-size="28">replikte</text>
+  <text x="80" y="250" fill="#F5F7FA" font-family="DM Sans, sans-serif" font-size="64" font-weight="600">Operational Hub</text>
+  <text x="80" y="330" fill="#F5F7FA" font-family="DM Sans, sans-serif" font-size="36">From paper tickets to one place.</text>
+  <text x="80" y="430" fill="#6E9AFF" font-family="DM Sans, sans-serif" font-size="22">Fictional company · sample data</text>
+</svg>

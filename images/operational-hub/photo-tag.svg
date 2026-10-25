@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Sample photo of a test tag">
+  <rect width="640" height="480" fill="#EAEDF5"/>
+  <rect x="230" y="80" width="180" height="250" rx="8" fill="#fff" stroke="#0F1115" stroke-width="3"/>
+  <path d="M250 130 H390 M250 170 H390 M250 210 H360" stroke="#1A47B8" stroke-width="4"/>
+  <text x="320" y="400" text-anchor="middle" fill="#4A4A47" font-family="DM Sans, sans-serif" font-size="22">Sample photo</text>
+</svg>
