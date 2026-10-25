@@ -25,13 +25,18 @@ const HOME_TESTIMONIALS = [
   {
     quote: 'I used to spend at least 10 hours a week doing follow ups and administrative tasks, now it\'s all taken care by Nora and Replikte Operational Layer. I can focus more on the shop production.',
     name: 'Gus Bellini',
-    title: 'Owner, Custom Cabinetry Corp',
+    title: 'Owner, Custom Cabinetry Corp — Boca Raton, Florida',
     logo: '../images/customers/custom-cabinetry-corp.jpg',
     logoAlt: 'Custom Cabinetry Corp',
     logoWide: true,
     logoDark: true,
     link: 'https://www.instagram.com/yourcustomcabinetry/',
     linkLabel: 'Instagram',
+  },
+  {
+    quote: 'Replikte allowed us to improve our sales, through the use of Nora and its AI voice integration to our internal systems, now our customer can schedule sales visits whenever they need!',
+    name: 'Tyler Recesso',
+    title: 'Acqua Divina — Los Angeles, California',
   },
 ];
 
