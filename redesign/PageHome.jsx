@@ -37,6 +37,9 @@ const HOME_TESTIMONIALS = [
     quote: 'Replikte allowed us to improve our sales, through the use of Nora and its AI voice integration to our internal systems, now our customer can schedule sales visits whenever they need!',
     name: 'Tyler Recesso',
     title: 'Acqua Divina — Los Angeles, California',
+    logo: '../images/customers/acqua-divina.jpg',
+    logoAlt: 'Acqua Divina',
+    logoRound: true,
   },
 ];
 

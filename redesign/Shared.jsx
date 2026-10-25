@@ -260,8 +260,10 @@ const Testimonials = ({ items }) => (
             marginBottom: 24, fontStyle: 'normal', flex: 1 }}>"{t.quote}"</p>
           <div style={{ borderTop: '0.5px solid var(--color-line)', paddingTop: 16, display: 'flex', alignItems: 'center', gap: 14 }}>
             {t.logo && (
-              <img src={t.logo} alt={t.logoAlt || ''} width={t.logoWide ? 160 : 64} height={t.logoDark ? 76 : t.logoWide ? 48 : 64}
-                style={t.logoDark
+              <img src={t.logo} alt={t.logoAlt || ''} width={t.logoRound ? 88 : t.logoWide ? 160 : 64} height={t.logoRound ? 88 : t.logoDark ? 108 : t.logoWide ? 48 : 64}
+                style={t.logoRound
+                  ? { width: 88, height: 88, borderRadius: 999, objectFit: 'cover', background: '#000', flexShrink: 0 }
+                  : t.logoDark
                   ? { height: 108, width: 'auto', maxWidth: 168, borderRadius: 8, objectFit: 'contain', background: '#000', flexShrink: 0 }
                   : t.logoWide
                   ? { height: 48, width: 'auto', maxWidth: 180, borderRadius: 8, objectFit: 'contain', background: '#fff', padding: '4px 8px', flexShrink: 0 }

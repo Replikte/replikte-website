@@ -2083,6 +2083,14 @@ h3.subheading--tight {
   border-radius: 8px;
 }
 
+.testimonial-card__logo--round {
+  width: 88px;
+  height: 88px;
+  border-radius: 999px;
+  object-fit: cover;
+  background: #000;
+}
+
 .testimonial-card__link {
   display: inline-block;
   margin-top: 4px;
