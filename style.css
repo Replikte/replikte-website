@@ -3312,6 +3312,46 @@ h3.subheading--tight {
 }
 
 /* —— Operational hub demo —— */
+.hero-page--hub {
+  display: block;
+  padding-bottom: 28px;
+}
+
+.hero-page--hub .hero-page__copy {
+  max-width: 640px;
+}
+
+.hub-screen-section {
+  padding: 0 calc(40px + env(safe-area-inset-right, 0px)) 56px calc(40px + env(safe-area-inset-left, 0px));
+}
+
+.hub-shots {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  gap: 28px;
+}
+
+.hub-shot {
+  margin: 0;
+}
+
+.hub-shot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #D4D9E4;
+  border-radius: 14px;
+  background: #F5F7FA;
+}
+
+.hub-shot figcaption {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #4A4A47;
+}
+
 .section--hub {
   padding: 32px 16px 56px;
 }
