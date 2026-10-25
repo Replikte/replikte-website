@@ -2023,6 +2023,10 @@ h3.subheading--tight {
   gap: 12px;
 }
 
+.testimonial-grid:has(> :only-child) {
+  grid-template-columns: minmax(0, 560px);
+}
+
 .testimonial-card {
   background: var(--color-canvas);
   border: 0.5px solid var(--color-line);
@@ -2070,11 +2074,69 @@ h3.subheading--tight {
   box-sizing: content-box;
 }
 
+.testimonial-card__logo--mark {
+  width: auto;
+  height: 108px;
+  max-width: 168px;
+  object-fit: contain;
+  background: #000;
+  border-radius: 8px;
+}
+
 .testimonial-card__link {
   display: inline-block;
   margin-top: 4px;
   font-size: 12px;
   font-weight: 500;
+}
+
+.founder-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 24px;
+  background: var(--color-canvas);
+  border: 0.5px solid var(--color-line);
+  border-radius: var(--radius-lg);
+}
+
+.founder-card__head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.founder-card__name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.founder-card__role {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-signal);
+}
+
+.founder-card__bio {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.founder-card__list {
+  margin: 0;
+  padding-left: 1.15em;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+.founder-card__list li + li {
+  margin-top: 4px;
 }
 
 .testimonial-card__name {
